@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
+    <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
+    <link rel="stylesheet" href="../css/personal.css">
+    <link rel="stylesheet" href="../css/public_.css">
+    <title>看书网 | 让快乐更简单</title>
+    <script>
+        !function () {
+            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",
+                    b = document.createElement("style");
+            if (document.getElementsByTagName("head")[0].appendChild(b), b.styleSheet) b.styleSheet.disabled || (b.styleSheet.cssText = a); else try {
+                b.innerHTML = a
+            } catch (c) {
+                b.innerText = a
+            }
+        }();
+        !function (a, b) {
+            function c() {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = b / 10;
+                f.style.fontSize = c + "px", k.rem = a.rem = c
+            }
+
+            var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'),
+                    h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {});
+            if (g) {
+                console.warn("将根据已有的meta标签来设置缩放比例");
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            } else if (h) {
+                var m = h.getAttribute("content");
+                if (m) {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+                }
+            }
+            if (!i && !j) {
+                var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)),
+                        q = a.devicePixelRatio;
+                i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+            }
+            if (f.setAttribute("data-dpr", i), !g)if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else {
+                var r = e.createElement("div");
+                r.appendChild(g), e.write(r.innerHTML)
+            }
+            a.addEventListener("resize", function () {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function (a) {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () {
+                e.body.style.fontSize = 12 * i + "px"
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function (a) {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
+    </script>
+
+
+</head>
+<body style="font-size: 12px;">
+<div id="root">
+    <div data-reactroot="" class="page-style3 page-style3-male">
+        <div class="style3-toppage">
+            <div class="component-header-wrap-3"><span class="imgicon nav-left"></span>
+                <div class="title">排行榜</div>
+                <div class="menu-btn"></div>
+            </div>
+            <div class="btn-groups am-segment" role="tablist">
+                <div class="am-segment-item" role="tab" aria-selected="false" aria-disabled="false"
+                     style="color: rgb(58, 92, 162); background-color: rgb(255, 255, 255); border-color: rgb(58, 92, 162);">
+                    <div class="am-segment-item-inner" style="background-color: rgb(58, 92, 162);"></div>
+                    <!-- react-text: 13 -->点击榜<!-- /react-text --></div>
+                <div class="am-segment-item am-segment-item-selected" role="tab" aria-selected="true"
+                     aria-disabled="false"
+                     style="color: rgb(255, 255, 255); background-color: rgb(58, 92, 162); border-color: rgb(58, 92, 162);">
+                    <div class="am-segment-item-inner" style="background-color: rgb(58, 92, 162);"></div>
+                    <!-- react-text: 16 -->畅销榜<!-- /react-text --></div>
+                <div class="am-segment-item" role="tab" aria-selected="false" aria-disabled="false"
+                     style="color: rgb(58, 92, 162); background-color: rgb(255, 255, 255); border-color: rgb(58, 92, 162);">
+                    <div class="am-segment-item-inner" style="background-color: rgb(58, 92, 162);"></div>
+                    <!-- react-text: 19 -->打赏榜<!-- /react-text --></div>
+            </div>
+            <div class="toplist">
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-1">1</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/0-temp-201711-23-1511400204632.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096&amp;souce_scene=50"><span
+                            class="name">超级强兵当奶爸</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096&amp;souce_scene=50">啥，老子堂堂的漠北兵王，居然要当奶爸？好吧，看在孩子他妈貌若天仙的份儿上，老子勉强答应了……</a>
+                        </div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">更新中</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-2">2</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1660&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/0-temp-201709-26-1506409633341.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1660&amp;souce_scene=50"><span
+                            class="name">硬汉保镖要上天</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1660&amp;souce_scene=50">叶凌天，神秘部队退伍军人，为了给妹妹凑集五十万的治疗费用不得不给三元集团的千金小姐李雨欣当贴身保镖。且看经历过太多生死的铮铮硬汉叶凌天如何在这个繁华都市里走出属于自己的一条不平凡的路来。</a>
+                        </div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">更新中</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-3">3</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2099&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/0-temp-201711-23-1511400192342.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2099&amp;souce_scene=50"><span
+                            class="name">兵王卸甲</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2099&amp;souce_scene=50">超级兵王秦渊，卸甲归田重回都市，将当年的谜题一一解开！曾经扬名世界的兵王，让所有人为之折服！</a>
+                        </div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">更新中</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-4">4</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4308&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/0-temp-201802-05-1517792126754.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4308&amp;souce_scene=50"><span
+                            class="name">圣体通天</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4308&amp;souce_scene=50">为了活命就必须靠近女人，这是什么破规矩？唐铮拥有九阳圣体这千年难遇的身体，却不得不吸收纯阴之力才能活命，为了活命，拼了！绝美校花、女神老师、妩媚少妇、傲娇萝莉……形形色色的女人走进了他的生活，令他纵意花丛，笑傲都市！</a>
+                        </div>
+                        <div class="count clearfix"><span class="author tag">都市异能</span><span
+                                class="status tag">更新中</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-5">5</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2098&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/0-temp-201711-20-1511164277134.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2098&amp;souce_scene=50"><span
+                            class="name">都市血色风暴</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2098&amp;souce_scene=50">他是战场上最强的利剑，是血色的风暴，他所到之处血雨腥风，却受命退伍，返回都市，开启了一段香艳而疯狂的征服之路。
+                            男人见了他色变，女人见了他‘变色’，无论是战场还是繁华都市，他都是最强大的男人，最碉堡的战兵。</a></div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">已完结</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-6">6</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2859&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/0-temp-201712-22-1513928558463.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2859&amp;souce_scene=50"><span
+                            class="name">82859</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2859&amp;souce_scene=50">官之途，民为本，为官一任，造福一方！
+                            军人出身的柳擎宇，毅然转业进入官场，成为乡镇镇长，然而上任当天却被完全架空，甚至被晾在办公室无人理睬！
+                            且看脾气火爆，办事雷厉风行的他，如何凭借着机智头脑和层出不穷的手段，翻手间覆灭种种阴谋，步步高升！几十次微妙的官位升迁，数千场激烈的明争暗斗争，历经波折，踏上权力之巅！
+                            柳擎宇一直本着为官一任造福一方的为官原则，时刻都把国家利益和人民利益放在首位，他不惧怕任何困难，坚决真心实意的为老百姓做实事和好事，坚决与腐败分子作斗争，从不妥协！</a></div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">更新中</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-7">7</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2267&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/novel-2267-cover-2774.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2267&amp;souce_scene=50"><span
+                            class="name">护花狂龙</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2267&amp;souce_scene=50">衣冠未必禽兽！是男人，就要活出个人模狗样，混他个风生水起！一个身份如迷的爷们儿，要用一腔热情和两只铁拳，打下一片娇美江山……</a>
+                        </div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">已完结</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-8">8</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4829&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/0-temp-201803-15-1521097858529.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4829&amp;souce_scene=50"><span
+                            class="name">春色满村</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4829&amp;souce_scene=50">贾鱼为了完成一项秘密任务，在桃花村当村支书，没想到接二连三的桃运不断，清纯萝莉，欲罢不能的御姐，高冷的女干部，中性美的假小子……一波波的高耸入云，一波波的想要推倒，一波波的欲罢不能……</a>
+                        </div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">更新中</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-9">9</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1865&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/0-temp-201710-31-1509440506540.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1865&amp;souce_scene=50"><span
+                            class="name">校花的风流保镖</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1865&amp;souce_scene=50">会点小武功，懂点小医术，有点不要脸，少年秋羽来到大都市充当校花保镖，他能否守身如玉，继续纯洁……</a>
+                        </div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">更新中</span></div>
+                    </div>
+                </div>
+                <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
+                    <div class="style3-top-tag num-10">10</div>
+                    <div class="img"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1131&amp;souce_scene=50"><img
+                            src="http://cdn-novel.weituibao.com/novel-1131-cover-4470.jpg"></a></div>
+                    <div class="info"><a
+                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1131&amp;souce_scene=50"><span
+                            class="name">都市超级雇佣兵王</span></a>
+                        <div class="desc"><a
+                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1131&amp;souce_scene=50">昔日龙刺少主，国际首屈一指的雇佣兵组织冥殿的首脑，受命回归都市，与相互看不上眼的美女总裁结婚。
+                            老婆嫌弃不要紧，自有麻辣警花、妩媚总监、傲娇萝莉、甜美大学生送上门。
+                            女人多了麻烦也多，不要紧，哥最不缺的就是解决麻烦的实力。</a></div>
+                        <div class="count clearfix"><span class="author tag">都市言情</span><span
+                                class="status tag">更新中</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function onGoPage() {
+        let root = document.getElementById('root');
+        let nav_left = root.querySelector('.nav-left');
+
+        nav_left.onclick = function () {
+            window.location.href = '../index.html';
+        };
+
+
+    })();
+</script>
+</body>
+</html>

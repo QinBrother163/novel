@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
+    <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
+    <link rel="stylesheet" href="../css/personal.css">
+    <link rel="stylesheet" href="../css/public_.css">
+    <title>看书网 | 让快乐更简单</title>
+    <script>
+        !function () {
+            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",
+                    b = document.createElement("style");
+            if (document.getElementsByTagName("head")[0].appendChild(b), b.styleSheet) b.styleSheet.disabled || (b.styleSheet.cssText = a); else try {
+                b.innerHTML = a
+            } catch (c) {
+                b.innerText = a
+            }
+        }();
+        !function (a, b) {
+            function c() {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = b / 10;
+                f.style.fontSize = c + "px", k.rem = a.rem = c
+            }
+
+            var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'),
+                    h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {});
+            if (g) {
+                console.warn("将根据已有的meta标签来设置缩放比例");
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            } else if (h) {
+                var m = h.getAttribute("content");
+                if (m) {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+                }
+            }
+            if (!i && !j) {
+                var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)),
+                        q = a.devicePixelRatio;
+                i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+            }
+            if (f.setAttribute("data-dpr", i), !g)if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else {
+                var r = e.createElement("div");
+                r.appendChild(g), e.write(r.innerHTML)
+            }
+            a.addEventListener("resize", function () {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function (a) {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () {
+                e.body.style.fontSize = 12 * i + "px"
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function (a) {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
+    </script>
+</head>
+<body>
+
+<div id="root">
+    <div data-reactroot="" class="page-style3 page-style3-male">
+        <div class="style3-page-book">
+            <div class="component-header-wrap-3"><span class="imgicon nav-left"></span>
+                <div class="title">小说主页</div>
+                <div class="menu-btn"></div>
+            </div>
+            <div class="base-info">
+                <div class="img"><img alt="" src="http://cdn-novel.weituibao.com/0-temp-201711-23-1511400204632.jpg">
+                </div>
+                <div class="info">
+                    <div class="name">超级强兵当奶爸</div>
+                    <div class="status"><span class="status-tag">都市言情</span><span class="category">更新中</span></div>
+                    <p class="count"><span><!-- react-text: 20 -->564<!-- /react-text --><!-- react-text: 21 -->万字
+                        <!-- /react-text --></span></p></div>
+            </div>
+            <div class="book-actions"><a
+                    href="novelReading.html"
+                    class="bg-active">开始阅读</a><span class="ghost-btn">加入书架</span></div>
+            <div class="book-des">
+                <div class="des-con">
+                    <div><p>啥，老子堂堂的漠北兵王，居然要当奶爸？好吧，看在孩子他妈貌若天仙的份儿上，老子勉强答应了……</p></div>
+                </div>
+                <span class="expand-icon"><span>...</span><i></i></span></div>
+            <div class="home3-block book-category"><h3 class="clearfix">书籍目录</h3>
+                <div class="block-content clearfix"><a class="category-item item-latest clearfix"
+                                                       href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=2096&amp;chapter=2162&amp;souce_scene=50"><span
+                        class="new">新</span><span>第二千一百六十二章:爸爸是我的</span><span
+                        class="update-time">2018.03.24</span></a><a class="category-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=2096&amp;chapter=1&amp;souce_scene=50">第一章:高薪工作</a><a
+                        class="category-item"
+                        href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=2096&amp;chapter=2&amp;souce_scene=50">第二章:二斤C4</a><a
+                        class="category-item"
+                        href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=2096&amp;chapter=3&amp;souce_scene=50">第三章:超人叔叔</a><a
+                        class="category-item"
+                        href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=2096&amp;chapter=4&amp;souce_scene=50">第四章:调戏警花</a><a
+                        href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/directory?account_id=2437&amp;novel_id=2096&amp;souce_scene=50"
+                        class="to-all active">全部目录</a></div>
+            </div>
+            <div class="home3-block dashang-list">
+                <div class="shang-head"><h3 class="clearfix"><!-- react-text: 46 -->打赏记录<!-- /react-text --><span
+                        class="count">(收到打赏15880书币)</span></h3><span class="dashang-btn"></span></div>
+                <div class="people-list">
+                    <div>
+                        <div class="list-item">
+                            <div class="avatar">
+                                <img
+                                    src="http://wx.qlogo.cn/mmopen/EcZfJ0xCjH65VvCnaoMAVkjb0TVGmdeN4YR6dPbzR738A7HWry5YWOlmc3bvYjLlKvISqUhn4uelhEicfvbLOHDbEI3yicqHbo/0"
+                                    alt="">
+                                <span class="icon-reward" style="background-image: url(&quot;//s.weituibao.com/static/2017-11-08-%E9%87%91%E7%89%8C%402x.png&quot;);"></span>
+                            </div>
+                            <div class="name">🐳左老师。</div>
+                            <div class="reward"><!-- react-text: 57 -->1676<!-- /react-text --><!-- react-text: 58 -->书币
+                                <!-- /react-text --></div>
+                        </div>
+                        <div class="list-item">
+                            <div class="avatar"><img
+                                    src="http://wx.qlogo.cn/mmopen/ZIUESIfsicGxuKHmCcwFOjn3Z1nJYer3xolUpseHtwFnQNke4EdwKjf8QmkbR7WiaLJvP15KVXjmC4OO2PqsiabScNVzvg5faOI/132"
+                                    alt=""><span class="icon-reward"
+                                                 style="background-image: url(&quot;//s.weituibao.com/static/2017-11-08-%E9%93%B6%E7%89%8C%402x.png&quot;);"></span>
+                            </div>
+                            <div class="name">🔴 小亮💋</div>
+                            <div class="reward"><!-- react-text: 65 -->988<!-- /react-text --><!-- react-text: 66 -->书币
+                                <!-- /react-text --></div>
+                        </div>
+                        <div class="list-item">
+                            <div class="avatar"><img
+                                    src="http://wx.qlogo.cn/mmopen/J919iaLegJxTyqWzHa9kQ08cwdx3mOe5uK50ocNmLgdGyib4jUye3CmtLv1XmhLSHmd6oicGH3nhgJmEiaKxp0ibresAAnSQxqia5ib/0"
+                                    alt=""><span class="icon-reward"
+                                                 style="background-image: url(&quot;//s.weituibao.com/static/2017-11-08-%E9%93%9C%E7%89%8C%402x.png&quot;);"></span>
+                            </div>
+                            <div class="name">张玲月</div>
+                            <div class="reward"><!-- react-text: 73 -->988<!-- /react-text --><!-- react-text: 74 -->书币
+                                <!-- /react-text --></div>
+                        </div>
+                    </div>
+                    <a href="/reward?account_id=2437&amp;novel_id=2096" class="load-more"><span>更多打赏</span>
+                        <svg class="am-icon am-icon-right am-icon-md">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#right"></use>
+                        </svg>
+                    </a></div>
+            </div>
+            <div class="home3-block comment-wrap"><h3 class="clearfix"><!-- react-text: 81 -->评论
+                <!-- /react-text --><span class="count">(11条评论)</span></h3><a class="comment-btn"
+                                                                              href="/addComment?account_id=2437&amp;novel_id=2096&amp;novel_name=%E8%B6%85%E7%BA%A7%E5%BC%BA%E5%85%B5%E5%BD%93%E5%A5%B6%E7%88%B8"></a>
+                <div class="comment-list">
+                    <div class="comment-item">
+                        <div class="top-area"><img class="avatar"
+                                                   src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLB5eLQn4L4icHia0UsXdfqkJEia7tlgG0oeEf4CIFthr1z0HMNA2Cy3RaLr7KmvbIdoEXybK9ScYNIlw/0"
+                                                   alt="">
+                            <p>嘉嘉B租男爱</p><span class="">17</span></div>
+                        <div class="summary-area"><a
+                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=7313&amp;reply_name=%E5%98%89%E5%98%89B%E7%A7%9F%E7%94%B7%E7%88%B1">不错。。我第一次看小说。对这部小说非常感兴趣</a>
+                            <div><span class="date">2017-11-29 17:14:27</span><a
+                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=7313&amp;reply_name=%E5%98%89%E5%98%89B%E7%A7%9F%E7%94%B7%E7%88%B1"
+                                    class="reply-count"><!-- react-text: 118 -->回复<!-- /react-text --></a></div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="top-area"><img class="avatar"
+                                                   src="http://wx.qlogo.cn/mmopen/KnibIIsVhiaibcurHvOkkMwRuXJ4aCiazFTUZMkleLrRUyBrtoFPZnxUaRngMomp5s7cHuA9FnGkfNvETqdZucibO2A6hBibIySCAq/132"
+                                                   alt="">
+                            <p>兵王</p><span class="">7</span></div>
+                        <div class="summary-area"><a
+                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=30051&amp;reply_name=%E5%85%B5%E7%8E%8B">这书总体来说还行，不过有几个我需要说说，一是题目叫奶爸，应当多围绕这题去下笔，去做文章，这书中关于这方面的少，写泡妞的多
+                            二是既然是当兵的又是兵王，而且当兵时间八年，这当兵的理想坚定，信念坚定什么的，最强了，纵观全文，基本有个女的都可以把他推倒，可以委婉的写一写，请自爱，自重，什么的，一句话的事
+                            三是当兵的基本都是很爱家爱自己的老婆的，很少在外面沾花惹草，这书里，唉，基本上有个女的基本上都有他一腿，都想跟他上床，都想跟他生小孩子，这内容太多了，可读性不强，会引起反感，我需要没有写过书，但是这喜欢和不喜欢的，一看就知道，几点建议，不到之足请原谅，喜欢作者把当兵的理解理解啰！！！！！</a>
+                            <div><span class="date">2018-01-31 10:24:06</span><a
+                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=30051&amp;reply_name=%E5%85%B5%E7%8E%8B"
+                                    class="reply-count"><!-- react-text: 129 -->回复<!-- /react-text -->
+                                <!-- react-text: 130 -->（1）<!-- /react-text --></a></div>
+                        </div>
+                        <div class="reply-area"><p><span><!-- react-text: 134 -->1997<!-- /react-text -->
+                            <!-- react-text: 135 -->：<!-- /react-text --></span><span style="color: rgb(51, 51, 51);">小说而已，较真了就不是小说了，那叫历史</span>
+                        </p></div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="top-area"><img class="avatar"
+                                                   src="http://wx.qlogo.cn/mmopen/FjUOibKGLZU7elTIaqiaWTP4XnJ5W5FLXH5gGELjXpb7c4pVbsC2sficw07pMxUmQwJ9ia0Vnye9jR4Hcqr38eS9swGgb3HyTCdP/0"
+                                                   alt="">
+                            <p>关爱</p><span class="">6</span></div>
+                        <div class="summary-area"><a
+                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=16309&amp;reply_name=%E5%85%B3%E7%88%B1">这部小说还可以</a>
+                            <div><span class="date">2017-12-22 20:52:18</span><a
+                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=16309&amp;reply_name=%E5%85%B3%E7%88%B1"
+                                    class="reply-count"><!-- react-text: 147 -->回复<!-- /react-text --></a></div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="top-area"><img class="avatar"
+                                                   src="http://wx.qlogo.cn/mmopen/Q3auHgzwzM5bIQyHteAYQ3o2kt16Jqmq9OPcBzVAQ14icrk9bWWVeCY4nib8B7rxyFNWd2fnWPTcPfbGkXrvFrWw/0"
+                                                   alt="">
+                            <p>通辉商贸有限公司</p><span class="">5</span></div>
+                        <div class="summary-area"><a
+                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=15643&amp;reply_name=%E9%80%9A%E8%BE%89%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8">很好(✪▽✪)，第一次看小说，非常精彩了，很值得看，不错</a>
+                            <div><span class="date">2017-12-20 20:50:20</span><a
+                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=15643&amp;reply_name=%E9%80%9A%E8%BE%89%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                                    class="reply-count"><!-- react-text: 158 -->回复<!-- /react-text --></a></div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="top-area"><img class="avatar"
+                                                   src="http://wx.qlogo.cn/mmopen/KnibIIsVhiaibcurHvOkkMwRuXJ4aCiazFTUZMkleLrRUyBrtoFPZnxUaRngMomp5s7cHuA9FnGkfNvETqdZucibO2A6hBibIySCAq/132"
+                                                   alt="">
+                            <p>兵王</p><span class="">2</span></div>
+                        <div class="summary-area"><a
+                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=30069&amp;reply_name=%E5%85%B5%E7%8E%8B">对了，强烈建议，这书有个好的收尾，希望几个关键的人物都活下来</a>
+                            <div><span class="date">2018-01-31 10:51:30</span><a
+                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=30069&amp;reply_name=%E5%85%B5%E7%8E%8B"
+                                    class="reply-count"><!-- react-text: 169 -->回复<!-- /react-text --></a></div>
+                        </div>
+                    </div>
+                    <div class="load-more"><span>加载更多</span></div>
+                </div>
+            </div>
+            <div class="home3-block guess"><h3 class="clearfix">猜你喜欢</h3>
+                <div class="block-content clearfix">
+                    <div class="list"><a class="home3-book-item"
+                                         href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1660">
+                        <div class="img"><img src="http://cdn-novel.weituibao.com/0-temp-201709-26-1506409633341.jpg">
+                        </div>
+                        <span class="name">硬汉保镖要上天</span></a><a class="home3-book-item"
+                                                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1677">
+                        <div class="img"><img src="http://cdn-novel.weituibao.com/0-temp-201709-28-1506595307919.jpg">
+                        </div>
+                        <span class="name">我的未婚妻是总裁</span></a><a class="home3-book-item"
+                                                                 href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2099">
+                        <div class="img"><img src="http://cdn-novel.weituibao.com/0-temp-201711-23-1511400192342.jpg">
+                        </div>
+                        <span class="name">兵王卸甲</span></a><a class="home3-book-item"
+                                                             href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4848">
+                        <div class="img"><img src="http://cdn-novel.weituibao.com/0-temp-201803-20-1521522130652.jpg">
+                        </div>
+                        <span class="name">成长的代价</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function onGoPage() {
+        let root = document.getElementById('root');
+        let nav_left = root.querySelector('.nav-left');
+
+        nav_left.onclick = function () {
+            window.location.href = '../index.html';
+        };
+
+
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
+    <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
+    <link rel="stylesheet" href="../css/personal.css">
+    <link rel="stylesheet" href="../css/public_.css">
+    <title>看书网 | 让快乐更简单</title>
+    <script type="text/javascript">
+        !function () {
+            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",
+                    b = document.createElement("style");
+            if (document.getElementsByTagName("head")[0].appendChild(b), b.styleSheet) b.styleSheet.disabled || (b.styleSheet.cssText = a); else try {
+                b.innerHTML = a
+            } catch (c) {
+                b.innerText = a
+            }
+        }();
+        !function (a, b) {
+            function c() {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = b / 10;
+                f.style.fontSize = c + "px", k.rem = a.rem = c
+            }
+
+            var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'),
+                    h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {});
+            if (g) {
+                console.warn("将根据已有的meta标签来设置缩放比例");
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            } else if (h) {
+                var m = h.getAttribute("content");
+                if (m) {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+                }
+            }
+            if (!i && !j) {
+                var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)),
+                        q = a.devicePixelRatio;
+                i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+            }
+            if (f.setAttribute("data-dpr", i), !g)if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else {
+                var r = e.createElement("div");
+                r.appendChild(g), e.write(r.innerHTML)
+            }
+            a.addEventListener("resize", function () {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function (a) {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () {
+                e.body.style.fontSize = 12 * i + "px"
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function (a) {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
+    </script>
+</head>
+<body>
+<div class="recharge3 recharge3-male">
+    <div class="recharge-container3">
+        <div class="component-header-wrap-3">
+            <span class="imgicon nav-left"></span>
+            <div>充值</div>
+            <div class="menu-btn" id="J_navMenuBtn"></div>
+            <div class="menu-modal-bg" id="menu-modal-bg">
+                <div class="menu-content clearfix"><a href="/home?account_id=2437"><img
+                        src="//s.mxs.com/static/1507859585703/home@2x.png" alt="icon"><span>首页</span></a><a
+                        href="/myBookshelf?account_id=2437"><img src="//s.mxs.com/static/1507789770161/3.png"
+                                                                 alt="icon"><span>书架</span></a><a
+                        href="/readHistory?account_id=2437"><img src="//s.mxs.com/static/1507859585703/history@2x.png"
+                                                                 alt="icon"><span>阅读历史</span></a><a
+                        href="/library?account_id=2437"><img src="//s.mxs.com/static/1507789770161/1.png"
+                                                             alt="icon"><span>书库</span></a><a
+                        href="/top?account_id=2437"><img src="//s.mxs.com/static/1507789770161/2.png" alt="icon"><span>排行榜</span></a><a
+                        href="/search?account_id=2437"><img src="//s.mxs.com/static/1507859585703/search@2x.png"
+                                                            alt="icon"><span>搜索</span></a><a
+                        href="/pay/recharge?account_id=2437"><img src="//s.mxs.com/static/1507859585703/chong@2x.png"
+                                                                  alt="icon"><span>充值</span></a><a
+                        href="/user?account_id=2437"><img src="//s.mxs.com/static/1507789770161/4.png" alt="icon"><span>个人中心</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="J_tips">
+            <div class="recharge-info-has-coin">您的余额<span class="active">50</span>书币</div>
+        </div>
+
+        <div class="recharge-body-3">
+            <div class="recharge-body-3-info clearfix">
+                <h3>充书币</h3>
+                <span class="body-info-translate">首次加送1000书币</span>
+                <span class="ml30">1元=100书币</span>
+            </div>
+            <div class="recharge-item-container clearfix">
+                <div class="recharge-item selected" data-amount="30">
+                    <div class="title">30元</div>
+                    <p class="subtitle">3000书币</p><span class="desc">多送0元书币</span></div>
+                <div class="recharge-item" data-amount="50"><span class="fire"></span>
+                    <div class="title">50元</div>
+                    <p class="subtitle">5000+3000书币</p><span class="desc">多送30元书币</span></div>
+                <div class="recharge-item" data-amount="100">
+                    <div class="title">100元</div>
+                    <p class="subtitle">10000+8000书币</p><span class="desc">多送80元书币</span></div>
+                <div class="recharge-item" data-amount="200">
+                    <div class="title">200元</div>
+                    <p class="subtitle">20000+20000书币</p><span class="desc">多送200元书币</span></div>
+                <div class="recharge-item" data-amount="365">
+                    <div class="title">365元年费VIP会员</div>
+                    <span class="desc">365天畅读书城所有小说</span></div>
+            </div>
+            <div class="btn-sure">确认充值</div>
+
+            <div class="notice">
+                <p>书币属于虚拟商品，一经购买不得退换</p>
+                <p>充值后书币到账可能有延迟，1小时内未到账请联系客服微信公众号：xsfw123456，或拨打客服电话：13858069062</p>
+                <p>工作时间：周一到周五 9:00 - 18:00</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    (function onGoPage() {
+        let root = document.getElementById('root');
+        let nav_left = document.querySelector('.nav-left');
+
+        nav_left.onclick = function () {
+            window.location.href = 'personal.html';
+        };
+    })();
+</script>
+</body>
+</html>
