@@ -8243,9 +8243,57 @@ body {
 .am-segment-item:last-child {
     border-radius: 0 .13333rem .13333rem 0
 }
+/*nav按钮*/
+.am-segment_item_selected_0{
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 92, 162);
+    border-color: rgb(58, 92, 162);
+}
+.am-segment_item_selected_1{
+    color: rgb(58, 92, 162);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(58, 92, 162);
+}
+.am-segment_item_selected_00{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 135, 186);
+    border-color: rgb(255, 135, 186);
+}
+.am-segment_item_selected_11{
+    color: rgb(255, 135, 186);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 135, 186);
+}
+.boyH3:after{
+    content: " ";
+    width: .08rem;
+    height: .48rem;
+    background: #3a5ca2;
+    border-radius: .53333rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.girlH3:after{
+    content: " ";
+    width: .08rem;
+    height: .48rem;
+    background: #ff87ba;
+    border-radius: .53333rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.boyA{
+    color: #3a5ca2;
+}
+.girlA{
+    color: #ff87ba;
+}
+/*nav按钮*/
 
 .am-segment-item-selected {
-    background: #108ee9;
+    /*background: #108ee9;*/
     color: #fff
 }
 
@@ -8616,16 +8664,16 @@ body {
     font-weight: 400
 }
 
-.home3-block h3:after {
-    content: " ";
-    width: .08rem;
-    height: .48rem;
-    background: #ff87ba;
-    border-radius: .53333rem;
-    position: absolute;
-    top: 0;
-    left: 0
-}
+/*.home3-block h3:after {*/
+    /*content: " ";*/
+    /*width: .08rem;*/
+    /*height: .48rem;*/
+    /*background: #ff87ba;*/
+    /*border-radius: .53333rem;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0*/
+/*}*/
 
 .home3-block h3 .more {
     font-size: .32rem;
@@ -8992,9 +9040,9 @@ body {
     color: #ff3c66
 }
 
-.page-style3-male .home3-block h3:after {
-    background-color: #3a5ca2
-}
+/*.page-style3-male .home3-block h3:after {*/
+    /*background-color: #3a5ca2*/
+/*}*/
 
 .page-style3-male .home3-top-block .search-icon {
     background: url('../images/ico/search.png');
@@ -11695,6 +11743,12 @@ body {
     color: #fff;
     border-color: #3a5ca2;
     background-color: #3a5ca2
+}
+
+.bg-active_girl {
+    color: #fff;!important;
+    border-color: #ff87ba;!important;
+    background-color: #ff87ba!important;
 }
 
 .page-style3-male .bg-active2 {
