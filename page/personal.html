@@ -7,7 +7,6 @@
     <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
     <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
     <link rel="stylesheet" href="../css/personal.css">
-    <link rel="stylesheet" href="../css/public_.css">
     <title>看书网 | 让快乐更简单</title>
     <script type="text/javascript">
         !function () {
@@ -72,6 +71,24 @@
             <div class="component-header-wrap-3"><span class="imgicon nav-left"></span>
                 <div class="title">个人中心</div>
                 <div class="menu-btn"></div>
+                <div class="menu-modal-bg openMenu noMenu">
+                    <div class="menu-content"><a href="/home?account_id=2437"><img
+                            src="//s.weituibao.com/static/1507859585703/home@2x.png" alt="icon"><span>首页</span></a><a
+                            href="/myBookshelf?account_id=2437"><img
+                            src="//s.weituibao.com/static/1509005020911/bookshelf-icon%402x.png"
+                            alt="icon"><span>书架</span></a><a href="/readHistory?account_id=2437"><img
+                            src="//s.weituibao.com/static/1507859585703/history@2x.png" alt="icon"><span>阅读历史</span></a><a
+                            href="/library?account_id=2437"><img
+                            src="//s.weituibao.com/static/1509005020911/stacks-icon%402x.png" alt="icon"><span>书库</span></a><a
+                            href="/top?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/2.png"
+                                                             alt="icon"><span>排行榜</span></a><a
+                            href="/search?account_id=2437"><img
+                            src="//s.weituibao.com/static/1507859585703/search@2x.png" alt="icon"><span>搜索</span></a><a
+                            href="/pay/recharge?account_id=2437"><img
+                            src="//s.weituibao.com/static/1507859585703/chong@2x.png" alt="icon"><span>充值</span></a><a
+                            href="/user?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/4.png"
+                                                              alt="icon"><span>个人中心</span></a></div>
+                </div>
             </div>
             <div class="user-info">
                 <div class="user-avatar-item"><img
@@ -107,7 +124,7 @@
                 <!-- /react-text --><span class="arrow-right"></span></span></a><a class="weui-tabbar__item"
                                                                                    href="userTopUpRecord.html"><img
                     src="//s.weituibao.com/static/1507792333094/recharge-icon%402x.png" alt=""><span class="right-ctn"><!-- react-text: 45 -->充值记录
-                <!-- /react-text --><span class="arrow-right"></span></span></a><a class="weui-tabbar__item"
+                <!-- /react-text --><span class="arrow-right"></span></span></a><a id="artificial" class="weui-tabbar__item"
                                                                                    href="javascript:;"><img
                     src="//s.weituibao.com/static/1507792333094/personal-service-icon%402x.png" alt=""><span
                     class="right-ctn"><!-- react-text: 50 -->联系客服<!-- /react-text --><span
@@ -115,13 +132,56 @@
         </div>
     </div>
 </div>
+<div class="reward_con noMenu">
+    <div data-reactroot="">
+        <div class="am-modal-mask"></div>
+        <div tabindex="-1" class="am-modal-wrap " role="dialog" aria-labelledby="rcDialogTitle0">
+            <div role="document" class="am-modal am-modal-transparent" style="width: 5.4rem; height: auto;">
+                <div class="am-modal-content">
+                    <button aria-label="Close" class="am-modal-close"><span class="am-modal-close-x"></span></button>
+                    <div class="am-modal-header">
+                        <div class="am-modal-title" id="rcDialogTitle0">
+                            <div style="text-align: center;">联系客服</div>
+                        </div>
+                    </div>
+                    <div class="am-modal-body">
+                        <div class="contact-service-ctn"><p>长按识别二维码，添加客服微信</p><img
+                                src="https://www.mxs.com/common/img/contact_qrcode.png?v=20171106" alt=""></div>
+                    </div>
+                </div>
+                <div tabindex="0" style="width: 0px; height: 0px; overflow: hidden;">sentinel</div>
+            </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript">
     (function onGoPage() {
         let root = document.getElementById('root');
         let nav_left = root.querySelector('.nav-left');
+        let menu_btn = root.querySelector('.menu-btn');
+        let openMenu = root.querySelector('.openMenu');
+        let reward = document.querySelector('.reward_con');
+        let right_ctn = document.querySelector('#artificial');
+        let am_modal_close = document.querySelector('.am-modal-close');
+
+        right_ctn.onclick = function () {
+            let i = reward.className == 'reward_con noMenu';
+            reward.className = i?'reward_con':'reward_con noMenu';
+        };
+        am_modal_close.onclick = function () {
+            reward.className = 'reward_con noMenu';
+        };
 
         nav_left.onclick = function () {
-            window.location.href = '../index.html';
+            window.history.go(-1);
+            window.location.href = document.referrer;
+        };
+        menu_btn.onclick = function () {
+            let open = menu_btn.className == 'menu-btn';
+            menu_btn.className = open ? 'menu-btn open' : 'menu-btn';
+
+            let i = openMenu.className == 'menu-modal-bg openMenu noMenu';
+            openMenu.className = i ? 'menu-modal-bg openMenu' : 'menu-modal-bg openMenu noMenu';
         };
     })();
 </script>

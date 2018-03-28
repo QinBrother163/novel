@@ -8290,6 +8290,13 @@ body {
 .girlA{
     color: #ff87ba;
 }
+
+/*.openMenu{*/
+    /*display: block;*/
+/*}*/
+.noMenu{
+    display: none;!important;
+}
 /*nav按钮*/
 
 .am-segment-item-selected {
@@ -8353,7 +8360,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../images/xianmian.png);
+    background: url(../images/ico/xianmian.png);
     background-size: 100% 100%;
     z-index: 20
 }
@@ -9555,12 +9562,12 @@ body {
     padding-left: .66667rem;
     float: right;
     font-size: .26667rem;
-    background: url(//s.weituibao.com/static/2017-11-08-%E7%82%B9%E8%B5%9E%402x.png) no-repeat .26667rem/.26667rem
+    background: url('../images/noLike.png') no-repeat .26667rem/.26667rem
 }
 
 .comment-item .top-area span.like {
     color: #ff87ba;
-    background-image: url(//s.weituibao.com/static/2017-11-08-%E5%B7%B2%E7%82%B9%E8%B5%9E%402x.png)
+    background: url('../images/alreadyLike.png')no-repeat .26667rem/.26667rem;
 }
 
 .comment-item .summary-area {
@@ -11464,7 +11471,7 @@ body {
 }
 
 .recharge-container3 .menu-modal-bg {
-    display: none
+    /*display: none*/
 }
 
 .recharge-container3 .recharge-info-has-coin, .recharge-container3 .recharge-info-none-coin {

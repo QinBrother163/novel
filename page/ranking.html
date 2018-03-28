@@ -7,7 +7,6 @@
     <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
     <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
     <link rel="stylesheet" href="../css/personal.css">
-    <link rel="stylesheet" href="../css/public_.css">
     <title>看书网 | 让快乐更简单</title>
     <script>
         !function () {
@@ -74,21 +73,39 @@
             <div class="component-header-wrap-3"><span class="imgicon nav-left"></span>
                 <div class="title">排行榜</div>
                 <div class="menu-btn"></div>
+                <div class="menu-modal-bg openMenu noMenu">
+                    <div class="menu-content"><a href="/home?account_id=2437"><img
+                            src="//s.weituibao.com/static/1507859585703/home@2x.png" alt="icon"><span>首页</span></a><a
+                            href="/myBookshelf?account_id=2437"><img
+                            src="//s.weituibao.com/static/1509005020911/bookshelf-icon%402x.png"
+                            alt="icon"><span>书架</span></a><a href="/readHistory?account_id=2437"><img
+                            src="//s.weituibao.com/static/1507859585703/history@2x.png" alt="icon"><span>阅读历史</span></a><a
+                            href="/library?account_id=2437"><img
+                            src="//s.weituibao.com/static/1509005020911/stacks-icon%402x.png" alt="icon"><span>书库</span></a><a
+                            href="/top?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/2.png"
+                                                             alt="icon"><span>排行榜</span></a><a
+                            href="/search?account_id=2437"><img
+                            src="//s.weituibao.com/static/1507859585703/search@2x.png" alt="icon"><span>搜索</span></a><a
+                            href="/pay/recharge?account_id=2437"><img
+                            src="//s.weituibao.com/static/1507859585703/chong@2x.png" alt="icon"><span>充值</span></a><a
+                            href="/user?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/4.png"
+                                                              alt="icon"><span>个人中心</span></a></div>
+                </div>
             </div>
             <div class="btn-groups am-segment" role="tablist">
-                <div class="am-segment-item" role="tab" aria-selected="false" aria-disabled="false"
-                     style="color: rgb(58, 92, 162); background-color: rgb(255, 255, 255); border-color: rgb(58, 92, 162);">
+                <div class="am-segment-item" role="tab" aria-selected="false" aria-disabled="false">
                     <div class="am-segment-item-inner" style="background-color: rgb(58, 92, 162);"></div>
-                    <!-- react-text: 13 -->点击榜<!-- /react-text --></div>
+                    <!-- react-text: 84 -->点击榜<!-- /react-text -->
+                </div>
                 <div class="am-segment-item am-segment-item-selected" role="tab" aria-selected="true"
-                     aria-disabled="false"
-                     style="color: rgb(255, 255, 255); background-color: rgb(58, 92, 162); border-color: rgb(58, 92, 162);">
+                     aria-disabled="false">
                     <div class="am-segment-item-inner" style="background-color: rgb(58, 92, 162);"></div>
-                    <!-- react-text: 16 -->畅销榜<!-- /react-text --></div>
-                <div class="am-segment-item" role="tab" aria-selected="false" aria-disabled="false"
-                     style="color: rgb(58, 92, 162); background-color: rgb(255, 255, 255); border-color: rgb(58, 92, 162);">
+                    <!-- react-text: 87 -->畅销榜<!-- /react-text -->
+                </div>
+                <div class="am-segment-item" role="tab" aria-selected="false" aria-disabled="false">
                     <div class="am-segment-item-inner" style="background-color: rgb(58, 92, 162);"></div>
-                    <!-- react-text: 19 -->打赏榜<!-- /react-text --></div>
+                    <!-- react-text: 90 -->打赏榜<!-- /react-text -->
+                </div>
             </div>
             <div class="toplist">
                 <div class="style3-book-item2 clearfix style3-book-item2-hasIndex">
@@ -252,11 +269,42 @@
     (function onGoPage() {
         let root = document.getElementById('root');
         let nav_left = root.querySelector('.nav-left');
+        let menu_btn = root.querySelector('.menu-btn');
+        let openMenu = root.querySelector('.openMenu');
+        let am_segment_item = document.getElementsByClassName('am-segment-item');
+
+        function tabEffect(am_segment_item, tabEffect1, tabEffect2) {
+            for (let i = 0; i < am_segment_item.length; i++) {
+                am_segment_item[0].className = tabEffect2;
+                am_segment_item[1].className = tabEffect1;
+                am_segment_item[2].className = tabEffect2;
+            }
+            for (let i = 0; i < am_segment_item.length; i++) {
+                am_segment_item[i].onclick = function () {
+                    for (let i = 0; i < am_segment_item.length; i++) {
+                        am_segment_item[i].className = tabEffect2;
+                    }
+                    this.className = tabEffect1;
+                }
+            }
+        }
+
+        let tabEffect1 = 'am-segment-item am-segment-item-selected am-segment_item_selected_0';
+        let tabEffect2 = 'am-segment-item am-segment_item_selected_1';
+        tabEffect(am_segment_item, tabEffect1, tabEffect2);
 
         nav_left.onclick = function () {
-            window.location.href = '../index.html';
+            window.history.go(-1);
+            window.location.href = document.referrer;
         };
 
+        menu_btn.onclick = function () {
+            let open = menu_btn.className == 'menu-btn';
+            menu_btn.className = open?'menu-btn open':'menu-btn';
+
+            let i = openMenu.className == 'menu-modal-bg openMenu noMenu';
+            openMenu.className = i?'menu-modal-bg openMenu':'menu-modal-bg openMenu noMenu';
+        };
 
     })();
 </script>

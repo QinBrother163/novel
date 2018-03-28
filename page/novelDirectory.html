@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
+    <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
+    <link rel="stylesheet" href="../css/personal.css">
+    <title>看书网 | 让快乐更简单</title>
+    <script>
+        !function () {
+            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",
+                    b = document.createElement("style");
+            if (document.getElementsByTagName("head")[0].appendChild(b), b.styleSheet) b.styleSheet.disabled || (b.styleSheet.cssText = a); else try {
+                b.innerHTML = a
+            } catch (c) {
+                b.innerText = a
+            }
+        }();
+        !function (a, b) {
+            function c() {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = b / 10;
+                f.style.fontSize = c + "px", k.rem = a.rem = c
+            }
+
+            var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'),
+                    h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {});
+            if (g) {
+                console.warn("将根据已有的meta标签来设置缩放比例");
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            } else if (h) {
+                var m = h.getAttribute("content");
+                if (m) {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+                }
+            }
+            if (!i && !j) {
+                var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)),
+                        q = a.devicePixelRatio;
+                i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+            }
+            if (f.setAttribute("data-dpr", i), !g)if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else {
+                var r = e.createElement("div");
+                r.appendChild(g), e.write(r.innerHTML)
+            }
+            a.addEventListener("resize", function () {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function (a) {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () {
+                e.body.style.fontSize = 12 * i + "px"
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function (a) {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
+    </script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__">
+    <symbol viewBox="0 0 44 44" id="down"><title>Operation Icons Copy 4</title>
+        <path d="M22.355 28.237l-11.483-10.9c-.607-.576-1.714-.396-2.48.41l.674-.71c-.763.802-.73 2.071-.282 2.496l11.37 10.793-.04.039 2.088 2.196 1.098-1.043 12.308-11.682c.447-.425.48-1.694-.282-2.496l.674.71c-.766-.806-1.873-.986-2.48-.41L22.355 28.237z"
+              fill-rule="evenodd"></path>
+    </symbol>
+    <symbol viewBox="0 0 44 44" id="up"><title>Operation Icons Copy 4</title><title>background</title>
+        <path fill="none" d="M-1-1h46v46H-1z"></path>
+        <g><title>Layer 1</title>
+            <defs>
+                <path id="up_a" d="M-129-845h24v24h-24z"></path>
+            </defs>
+            <clipPath id="up_b">
+                <use xlink:href="#up_a"></use>
+            </clipPath>
+            <g clip-path="url(#up_b)">
+                <defs>
+                    <path id="up_c" d="M-903-949H947V996H-903z"></path>
+                </defs>
+                <clipPath id="up_d">
+                    <use xlink:href="#up_c"></use>
+                </clipPath>
+            </g>
+            <path d="M23.417 14.229L11.184 26.462l2.121 2.12 10.12-10.117 10.117 10.118 2.121-2.121L23.43 14.229l-.006.006z"></path>
+        </g>
+    </symbol>
+</svg>
+<div id="root">
+    <div data-reactroot="" class="page-style3 page-style3-male">
+        <div class="directory3-container">
+            <div class="directory-header-3"><span class="imgicon nav-left"></span>
+                <div class="title"><span id="text-center" class="text-center"><span>101-200章</span>
+                    <!-- react-text: 8 -->
+                    <!-- /react-text --><svg class="am-icon am-icon-down am-icon-md icon"><use id="am-icon-use"
+                                                                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                               xlink:href="#down"></use></svg></span>
+                </div>
+                <div class="menu-btn"></div>
+            </div>
+            <div class="chapter-select-bg noMenu">
+                <div class="chapter-select">
+                    <div class="text-center">1-100章</div>
+                    <div class="text-center">101-200章</div>
+                    <div class="text-center">201-300章</div>
+                    <div class="text-center">301-400章</div>
+                    <div class="text-center">401-500章</div>
+                    <div class="text-center">501-600章</div>
+                    <div class="text-center">601-700章</div>
+                    <div class="text-center">701-800章</div>
+                    <div class="text-center">801-900章</div>
+                    <div class="text-center">901-1000章</div>
+                    <div class="text-center">1001-1100章</div>
+                    <div class="text-center">1101-1200章</div>
+                    <div class="text-center">1201-1300章</div>
+                    <div class="text-center">1301-1400章</div>
+                    <div class="text-center">1401-1500章</div>
+                    <div class="text-center">1501-1600章</div>
+                    <div class="text-center">1601-1700章</div>
+                    <div class="text-center">1701-1800章</div>
+                    <div class="text-center">1801-1900章</div>
+                    <div class="text-center">1901-2000章</div>
+                    <div class="text-center">2001-2100章</div>
+                    <div class="text-center">2101-2200章</div>
+                    <div class="text-center">2201-2300章</div>
+                    <div class="text-center">2301-2400章</div>
+                    <div class="text-center">2401-2500章</div>
+                    <div class="text-center">2501-2600章</div>
+                    <div class="text-center">2601-2700章</div>
+                    <div class="text-center">2701-2800章</div>
+                    <div class="text-center">2801-2900章</div>
+                    <div class="text-center">2901-3000章</div>
+                    <div class="text-center">3001-3100章</div>
+                    <div class="text-center">3101-3200章</div>
+                    <div class="text-center">3201-3300章</div>
+                    <div class="text-center">3301-3400章</div>
+                    <div class="text-center">3401-3500章</div>
+                    <div class="text-center">3501-3600章</div>
+                    <div class="text-center">3601-3700章</div>
+                    <div class="text-center">3701-3800章</div>
+                    <div class="text-center">3801-3900章</div>
+                    <div class="text-center">3901-4000章</div>
+                    <div class="text-center">4001-4100章</div>
+                    <div class="text-center">4101-4200章</div>
+                    <div class="text-center">4201-4300章</div>
+                    <div class="text-center">4301-4400章</div>
+                    <div class="text-center">4401-4500章</div>
+                    <div class="text-center">4501-4600章</div>
+                    <div class="text-center">4601-4700章</div>
+                    <div class="text-center">4701-4800章</div>
+                    <div class="text-center">4801-4900章</div>
+                    <div class="text-center">4901-5000章</div>
+                    <div class="text-center">5001-5093章</div>
+                </div>
+            </div>
+            <div class="chapter-list"><a class="chapter-item active"
+                                         href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=1&amp;souce_scene=20">
+                <p>第1章外面的世界</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                     href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=2&amp;souce_scene=20">
+                <p>第2章赏月</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                  href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=3&amp;souce_scene=20">
+                <p>第3章神州武馆</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=4&amp;souce_scene=20">
+                <p>第4章雷霆娇娃</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=5&amp;souce_scene=20">
+                <p>第5章神秘暗器</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=6&amp;souce_scene=20">
+                <p>第6章绝技</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                  href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=7&amp;souce_scene=20">
+                <p>第7章野兽六人组</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                     href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=8&amp;souce_scene=20">
+                <p>第8章化干戈为玉帛</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                      href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=9&amp;souce_scene=20">
+                <p>第9章小试身手</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=10&amp;souce_scene=20">
+                <p>第10章富人天堂</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                     href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=11&amp;souce_scene=20">
+                <p>第11章表小姐</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=12&amp;souce_scene=20">
+                <p>第12章换人</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                   href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=13&amp;souce_scene=20">
+                <p>第13章天堂</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                   href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=14&amp;souce_scene=20">
+                <p>第14章六合拳</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=15&amp;souce_scene=20">
+                <p>第15章指点</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                   href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=16&amp;souce_scene=20">
+                <p>第16章知遇之恩</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                     href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=17&amp;souce_scene=20">
+                <p>第17章先让大爷亲一下</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                        href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=18&amp;souce_scene=20">
+                <p>第18章保镖不白雇</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                      href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=19&amp;souce_scene=20">
+                <p>第19章插班生</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=20&amp;souce_scene=20">
+                <p>第20章非人类</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=21&amp;souce_scene=20">
+                <p>第21章班花</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                   href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=22&amp;souce_scene=20">
+                <p>第22章勒索</p><span class="need-coin"></span></a><a class="chapter-item"
+                                                                   href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=23&amp;souce_scene=20">
+                <p>第23章四大金刚</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=24&amp;souce_scene=20">
+                <p>第24章美女老师</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=25&amp;souce_scene=20">
+                <p>第25章亲人</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=26&amp;souce_scene=20">
+                <p>第26章刀子嘴豆腐心</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=27&amp;souce_scene=20">
+                <p>第27章闻少</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=28&amp;souce_scene=20">
+                <p>第28章风云人物</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=29&amp;souce_scene=20">
+                <p>第29章另有所图</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=30&amp;souce_scene=20">
+                <p>第30章情书</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=31&amp;souce_scene=20">
+                <p>第31章误会</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=32&amp;souce_scene=20">
+                <p>第32章自不量力</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=33&amp;souce_scene=20">
+                <p>第33章要挟</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=34&amp;souce_scene=20">
+                <p>第34章学习也很幸福</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=35&amp;souce_scene=20">
+                <p>第35章披着人皮的狼</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=36&amp;souce_scene=20">
+                <p>第36章喜怒无常</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=37&amp;souce_scene=20">
+                <p>第37章动漫女生</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=38&amp;souce_scene=20">
+                <p>第38章人渣</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=39&amp;souce_scene=20">
+                <p>第39章街头霸王</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=40&amp;souce_scene=20">
+                <p>第40章如何变大</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=41&amp;souce_scene=20">
+                <p>第41章崇尚自由的年代</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=42&amp;souce_scene=20">
+                <p>第42章脱胎换骨</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=43&amp;souce_scene=20">
+                <p>第43章天上掉下来的女友</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=44&amp;souce_scene=20">
+                <p>第44章照猫画虎</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=45&amp;souce_scene=20">
+                <p>第45章轮廓清晰</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=46&amp;souce_scene=20">
+                <p>第46章有什么好看的</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=47&amp;souce_scene=20">
+                <p>第47章推拿</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=48&amp;souce_scene=20">
+                <p>第48章目不斜视</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=49&amp;souce_scene=20">
+                <p>第49章你情我愿</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=50&amp;souce_scene=20">
+                <p>第50章这也是艺术</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=51&amp;souce_scene=20">
+                <p>第51章美人关</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=52&amp;souce_scene=20">
+                <p>第52章让人惊诧的来访者</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=53&amp;souce_scene=20">
+                <p>第53章身在福中不知福</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=54&amp;souce_scene=20">
+                <p>第54章出手大方</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=55&amp;souce_scene=20">
+                <p>第55章牛人传说</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=56&amp;souce_scene=20">
+                <p>第56章焦点</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=57&amp;souce_scene=20">
+                <p>第57章哥们义气</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=58&amp;souce_scene=20">
+                <p>第58章大英雄</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=59&amp;souce_scene=20">
+                <p>第59章人猿</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=60&amp;souce_scene=20">
+                <p>第60章孝顺是一种美德</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=61&amp;souce_scene=20">
+                <p>第61章来日方长</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=62&amp;souce_scene=20">
+                <p>第62章雌雄难辨</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=63&amp;souce_scene=20">
+                <p>第63章无公害产品</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=64&amp;souce_scene=20">
+                <p>第64章个人主义要不得</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=65&amp;souce_scene=20">
+                <p>第65章主心骨</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=66&amp;souce_scene=20">
+                <p>第66章出手惊人</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=67&amp;souce_scene=20">
+                <p>第67章龙争虎斗</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=68&amp;souce_scene=20">
+                <p>第68章惊魂三秒钟</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=69&amp;souce_scene=20">
+                <p>第69章旗袍夺目</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=70&amp;souce_scene=20">
+                <p>第70章针尖对麦芒</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=71&amp;souce_scene=20">
+                <p>第71章比武争夫</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=72&amp;souce_scene=20">
+                <p>第72章启明星</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=73&amp;souce_scene=20">
+                <p>第73章黑衣骑士</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=74&amp;souce_scene=20">
+                <p>第74章你就从了本少吧</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=75&amp;souce_scene=20">
+                <p>第75章有营养的东西</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=76&amp;souce_scene=20">
+                <p>第76章飞虎队</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=77&amp;souce_scene=20">
+                <p>第77章猜拳定胜负</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=78&amp;souce_scene=20">
+                <p>第78章百媚横生</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=79&amp;souce_scene=20">
+                <p>第79章男生有这个吗</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=80&amp;souce_scene=20">
+                <p>第80章幸福降临的太快</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=81&amp;souce_scene=20">
+                <p>第81章楚楚动人黄花菜</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=82&amp;souce_scene=20">
+                <p>第82章愿意为你奉献一切</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=83&amp;souce_scene=20">
+                <p>第83章交杯酒</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=84&amp;souce_scene=20">
+                <p>第84章双飞</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=85&amp;souce_scene=20">
+                <p>第85章例无虚发</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=86&amp;souce_scene=20">
+                <p>第86章跪下</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=87&amp;souce_scene=20">
+                <p>第87章枪法如神</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=88&amp;souce_scene=20">
+                <p>第88章气焰滔天</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=89&amp;souce_scene=20">
+                <p>第89章好大一堆牛粪</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=90&amp;souce_scene=20">
+                <p>第90章还枪</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=91&amp;souce_scene=20">
+                <p>第91章女大三抱金砖</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=92&amp;souce_scene=20">
+                <p>第92章投我以桃报之以李</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=93&amp;souce_scene=20">
+                <p>第93章宠妃</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=94&amp;souce_scene=20">
+                <p>第94章别逼我拔枪</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=95&amp;souce_scene=20">
+                <p>第95章自首</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=96&amp;souce_scene=20">
+                <p>第96章波霸俏佳人</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=97&amp;souce_scene=20">
+                <p>第97章樱花月舞</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=98&amp;souce_scene=20">
+                <p>第98章奇怪语言</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=99&amp;souce_scene=20">
+                <p>第99章以前看过吗</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=100&amp;souce_scene=20">
+                <p>第100章困扰</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=101&amp;souce_scene=20">
+                <p>第101章雁过拔毛</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=102&amp;souce_scene=20">
+                <p>第102章神魂颠倒</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=103&amp;souce_scene=20">
+                <p>第103章医生权力</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=104&amp;souce_scene=20">
+                <p>第104章等你</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=105&amp;souce_scene=20">
+                <p>第105章谁都得给面子</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=106&amp;souce_scene=20">
+                <p>第106章求爱演唱会</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=107&amp;souce_scene=20">
+                <p>第107章紫燕喜翔黄道日</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=108&amp;souce_scene=20">
+                <p>第108章誓言</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=109&amp;souce_scene=20">
+                <p>第109章真亦假时假亦真</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=110&amp;souce_scene=20">
+                <p>第110章使者</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=111&amp;souce_scene=20">
+                <p>第111章迂回策略</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=112&amp;souce_scene=20">
+                <p>第112章三妻四妾</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=113&amp;souce_scene=20">
+                <p>第113章女王范</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=114&amp;souce_scene=20">
+                <p>第114章合意坊</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=115&amp;souce_scene=20">
+                <p>第115章佛心针</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=116&amp;souce_scene=20">
+                <p>第116章妙手回春</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=117&amp;souce_scene=20">
+                <p>第117章人生观</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=118&amp;souce_scene=20">
+                <p>第118章奇怪之物</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=119&amp;souce_scene=20">
+                <p>第119章以德载物</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=120&amp;souce_scene=20">
+                <p>第120章巨大回报</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=121&amp;souce_scene=20">
+                <p>第121章人小鬼大</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=122&amp;souce_scene=20">
+                <p>第122章三生有幸</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=123&amp;souce_scene=20">
+                <p>第123章亲密无间</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=124&amp;souce_scene=20">
+                <p>第124章无拘无束</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=125&amp;souce_scene=20">
+                <p>第125章天籁之音</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=126&amp;souce_scene=20">
+                <p>第126章燕瘦环肥</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=127&amp;souce_scene=20">
+                <p>第127章纯洁无暇</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=128&amp;souce_scene=20">
+                <p>第128章意气风发</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=129&amp;souce_scene=20">
+                <p>第129章胆子还真不小</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=130&amp;souce_scene=20">
+                <p>第130章好狗不挡道</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=131&amp;souce_scene=20">
+                <p>第131章彪悍</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=132&amp;souce_scene=20">
+                <p>第132章双花多娇</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=133&amp;souce_scene=20">
+                <p>第133章死猪不怕开水烫</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=134&amp;souce_scene=20">
+                <p>第134章沼泽</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=135&amp;souce_scene=20">
+                <p>第135章不寻常的凡夫俗子</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=136&amp;souce_scene=20">
+                <p>第136章山里孩子伤不起</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=137&amp;souce_scene=20">
+                <p>第137章恨铁不成钢</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=138&amp;souce_scene=20">
+                <p>第138章如狼似虎</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=139&amp;souce_scene=20">
+                <p>第139章红粉军团</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=140&amp;souce_scene=20">
+                <p>第140章大饱眼福</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=141&amp;souce_scene=20">
+                <p>第141章神医小弟</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=142&amp;souce_scene=20">
+                <p>第142章奇症</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=143&amp;souce_scene=20">
+                <p>第143章收获不小</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=144&amp;souce_scene=20">
+                <p>第144章未知世界</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=145&amp;souce_scene=20">
+                <p>第145章本能反应</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=146&amp;souce_scene=20">
+                <p>第146章不达标</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=147&amp;souce_scene=20">
+                <p>第147章赝品男友</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=148&amp;souce_scene=20">
+                <p>第148章争执</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=149&amp;souce_scene=20">
+                <p>第149章演一出好戏</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=150&amp;souce_scene=20">
+                <p>第150章横刀夺爱</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=151&amp;souce_scene=20">
+                <p>第151章爱情的力量</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=152&amp;souce_scene=20">
+                <p>第152章好感倍增</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=153&amp;souce_scene=20">
+                <p>第153章有一种味道叫做关爱</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=154&amp;souce_scene=20">
+                <p>第154章日有所思</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=155&amp;souce_scene=20">
+                <p>第155章无大志</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=156&amp;souce_scene=20">
+                <p>第156章老古董武器</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=157&amp;souce_scene=20">
+                <p>第157章妖猫</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=158&amp;souce_scene=20">
+                <p>上架感言</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=159&amp;souce_scene=20">
+                <p>第158章以身相许怎么样</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=160&amp;souce_scene=20">
+                <p>第159章月斩</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=161&amp;souce_scene=20">
+                <p>第160章海妖摄魂</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=162&amp;souce_scene=20">
+                <p>第161章亡命徒</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=163&amp;souce_scene=20">
+                <p>第162章女孩心思</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=164&amp;souce_scene=20">
+                <p>第163章拐来的小不点</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=165&amp;souce_scene=20">
+                <p>第164章够不够霸道</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=166&amp;souce_scene=20">
+                <p>第165章一怒拔枪为尊严</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=167&amp;souce_scene=20">
+                <p>第166章民间狙击手</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=168&amp;souce_scene=20">
+                <p>第167章合伙欺负人</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=169&amp;souce_scene=20">
+                <p>第168章期待彩虹</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=170&amp;souce_scene=20">
+                <p>第169章声东击西</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=171&amp;souce_scene=20">
+                <p>第170章奴家侍候您</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=172&amp;souce_scene=20">
+                <p>第171章快枪手</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=173&amp;souce_scene=20">
+                <p>第172章战绩如何</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=174&amp;souce_scene=20">
+                <p>第173章雇主</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=175&amp;souce_scene=20">
+                <p>第174章爱之雕塑</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=176&amp;souce_scene=20">
+                <p>第175章私吞</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=177&amp;souce_scene=20">
+                <p>第176章握手言和</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=178&amp;souce_scene=20">
+                <p>第177章似酒醉人嫣然笑</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=179&amp;souce_scene=20">
+                <p>第178章聊天是一种乐趣</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=180&amp;souce_scene=20">
+                <p>第179章江月楼</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=181&amp;souce_scene=20">
+                <p>第180章龙虎会</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=182&amp;souce_scene=20">
+                <p>第181章山猪宴</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=183&amp;souce_scene=20">
+                <p>第182章异类餐饮</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=184&amp;souce_scene=20">
+                <p>第183章生死状</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=185&amp;souce_scene=20">
+                <p>第184章单挑</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=186&amp;souce_scene=20">
+                <p>第185章憾地弓</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=187&amp;souce_scene=20">
+                <p>第186章箭法如神</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=188&amp;souce_scene=20">
+                <p>第187章刀镇群魔</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=189&amp;souce_scene=20">
+                <p>第188章打掉牙齿肚里落</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=190&amp;souce_scene=20">
+                <p>第189章人生苦短</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=191&amp;souce_scene=20">
+                <p>第190章及时行乐</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=192&amp;souce_scene=20">
+                <p>第191章姐夫难当</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=193&amp;souce_scene=20">
+                <p>第192章夜独醉</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=194&amp;souce_scene=20">
+                <p>第193章大牙炳</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=195&amp;souce_scene=20">
+                <p>第194章第三者</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=196&amp;souce_scene=20">
+                <p>第195章脚踏三只船</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=197&amp;souce_scene=20">
+                <p>第196章在雨中</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=198&amp;souce_scene=20">
+                <p>第197章算账</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=199&amp;souce_scene=20">
+                <p>第198章军刀闪烁</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a><a
+                    class="chapter-item"
+                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/read/index?account_id=2437&amp;novel_id=1865&amp;chapter=200&amp;souce_scene=20">
+                <p>第199章出手狠辣</p><span><span class="diamond"></span><span class="need-coin">20</span></span></a>
+                <div>
+                    <div class="block-loading">
+                        <div class="am-activity-indicator am-activity-indicator-lg"><span
+                                class="am-activity-indicator-spinner am-activity-indicator-spinner-lg"
+                                aria-label="loading"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+
+
+    $("#text-center").click(function () {
+        let icon_ = $("#am-icon-use").attr("xlink:href");
+        switch (icon_) {
+            case '#down':
+                $("#am-icon-use").attr({"xlink:href": "#up"});
+                break;
+            case '#up':
+                $("#am-icon-use").attr({"xlink:href": "#down"});
+                break;
+            default:
+                break;
+        }
+    });
+
+    (function App() {
+        let root = document.getElementById('root');
+        let nav_left = root.querySelector('.nav-left');
+        let text_center = root.querySelector('#text-center');
+        let menu_btn = root.querySelector('.menu-btn');
+        let chapter_select_bg = root.querySelector('.chapter-select-bg');
+        let am_icon = document.querySelector('.am-icon');
+
+
+        nav_left.onclick = function () {
+            window.history.go(-1);
+            window.location.href = document.referrer;
+        };
+
+        menu_btn.onclick = function () {
+            let i = menu_btn.className == 'menu-btn';
+            menu_btn.className = i ? 'menu-btn open' : 'menu-btn';
+        };
+
+        text_center.onclick = function () {
+            let open = am_icon.className == 'am-icon am-icon-down am-icon-md icon';
+            am_icon.className = open ? 'am-icon am-icon-up am-icon-md icon' : 'am-icon am-icon-down am-icon-md icon';
+
+
+            let i = chapter_select_bg.className == 'chapter-select-bg noMenu';
+            chapter_select_bg.className = i ? 'chapter-select-bg' : 'chapter-select-bg noMenu';
+        };
+
+
+    })();
+
+
+</script>
+</body>
+</html>

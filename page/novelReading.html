@@ -7,7 +7,6 @@
     <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
     <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
     <link rel="stylesheet" href="../css/personal.css">
-    <link rel="stylesheet" href="../css/public_.css">
     <title>看书网 | 让快乐更简单</title>
     <script>
         !function () {
@@ -67,7 +66,7 @@
 </head>
 <body>
 <div class="container style3" id="container">
-    <article class="white-mode middle-mode" id="J_read_detail">
+    <article class="middle-mode-list white-mode middle-mode" id="J_read_detail">
         <div class="article-head">
             <div class="article-head-title">
                 <a class="anticon anticon-left"
@@ -217,13 +216,127 @@
 <script type="text/javascript">
     (function onGoPage() {
         let root = document.getElementById('root');
-        let nav_left = root.querySelector('.nav-left');
+        let nav_left = document.querySelector('.anticon-left');
+        let color_tool = document.getElementsByClassName('color-tool');
+        let middle_mode = document.querySelector('.middle-mode-list');
+        let font2 = document.querySelector('.font2');
+        let font1 = document.querySelector('.font1');
+
+        function getQueryVariable(variable)
+        {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+        }
+        let page_url = getQueryVariable("pageUrl");
 
         nav_left.onclick = function () {
-            window.location.href = 'novelHome.html';
+//            window.history.go(-1);
+//            window.location.href = document.referrer;
+            window.location.href = page_url;
         };
 
+        let colorArr = [
+            'middle-mode-list white-mode middle-mode',
+            'middle-mode-list green-mode middle-mode',
+            'middle-mode-list brown-mode middle-mode',
+            'middle-mode-list night-mode middle-mode'
+        ];
 
+
+        let arrStr0 = [];
+        font2.onclick = function () {
+
+            arrStr0 = middle_mode.className.split(' ');
+
+            let fontArr = [
+                'middle-mode-list ' + arrStr0[1] + ' small-mode',
+                'middle-mode-list ' + arrStr0[1] + ' font3',
+                'middle-mode-list ' + arrStr0[1] + ' middle-mode',
+                'middle-mode-list ' + arrStr0[1] + ' font5',
+                'middle-mode-list ' + arrStr0[1] + ' big-mode',
+                'middle-mode-list ' + arrStr0[1] + ' font7'
+            ];
+
+            switch (arrStr0[2]) {
+                case 'small-mode':
+                    break;
+                case 'font3':
+                    middle_mode.className = fontArr[0];
+
+                    break;
+                case 'middle-mode':
+                    middle_mode.className = fontArr[1];
+
+                    break;
+                case 'font5':
+                    middle_mode.className = fontArr[2];
+
+                    break;
+                case 'big-mode':
+                    middle_mode.className = fontArr[3];
+
+                    break;
+                case 'font7':
+                    middle_mode.className = fontArr[4];
+
+                    break;
+                default:
+                    break;
+            }
+
+        };
+        font1.onclick = function () {
+            arrStr0 = middle_mode.className.split(' ');
+            let fontArr = [
+                'middle-mode-list ' + arrStr0[1] + ' small-mode',
+                'middle-mode-list ' + arrStr0[1] + ' font3',
+                'middle-mode-list ' + arrStr0[1] + ' middle-mode',
+                'middle-mode-list ' + arrStr0[1] + ' font5',
+                'middle-mode-list ' + arrStr0[1] + ' big-mode',
+                'middle-mode-list ' + arrStr0[1] + ' font7'
+            ];
+            switch (arrStr0[2]) {
+                case 'small-mode':
+                    middle_mode.className = fontArr[1];
+                    break;
+                case 'font3':
+                    middle_mode.className = fontArr[2];
+                    break;
+                case 'middle-mode':
+                    middle_mode.className = fontArr[3];
+                    break;
+                case 'font5':
+                    middle_mode.className = fontArr[4];
+                    break;
+                case 'big-mode':
+                    middle_mode.className = fontArr[5];
+                    break;
+                case 'font7':
+                    break;
+                default:
+                    break;
+            }
+        };
+
+        for (let i = 0; i < color_tool.length; i++) {
+            color_tool[i].onclick = function () {
+
+                for (let i = 0; i < color_tool.length; i++) {
+
+                    color_tool[0].className = 'color-tool color1';
+                    color_tool[1].className = 'color-tool color2';
+                    color_tool[2].className = 'color-tool color3';
+                    color_tool[3].className = 'color-tool color4';
+                }
+                middle_mode.className = colorArr[i];
+                this.className = 'color-tool ' + 'color' + (i + 1) + ' selected';
+            }
+        }
     })();
 </script>
 </body>
