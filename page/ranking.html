@@ -74,22 +74,43 @@
                 <div class="title">排行榜</div>
                 <div class="menu-btn"></div>
                 <div class="menu-modal-bg openMenu noMenu">
-                    <div class="menu-content"><a href="/home?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/home@2x.png" alt="icon"><span>首页</span></a><a
-                            href="/myBookshelf?account_id=2437"><img
-                            src="//s.weituibao.com/static/1509005020911/bookshelf-icon%402x.png"
-                            alt="icon"><span>书架</span></a><a href="/readHistory?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/history@2x.png" alt="icon"><span>阅读历史</span></a><a
-                            href="/library?account_id=2437"><img
-                            src="//s.weituibao.com/static/1509005020911/stacks-icon%402x.png" alt="icon"><span>书库</span></a><a
-                            href="/top?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/2.png"
-                                                             alt="icon"><span>排行榜</span></a><a
-                            href="/search?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/search@2x.png" alt="icon"><span>搜索</span></a><a
-                            href="/pay/recharge?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/chong@2x.png" alt="icon"><span>充值</span></a><a
-                            href="/user?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/4.png"
-                                                              alt="icon"><span>个人中心</span></a></div>
+                    <div class="menu-content">
+                        <a
+                                href="/home?account_id=2437"><img
+                                src="../images/home@2x.png" alt="icon"><span>首页</span>
+                        </a>
+                        <a
+                                href="/myBookshelf?account_id=2437"><img
+                                src="../images/bookshelf-icon@2x.png"
+                                alt="icon"><span>书架</span>
+                        </a>
+                        <a href="/readHistory?account_id=2437"><img
+                                src="../images/history@2x.png" alt="icon"><span>阅读历史</span>
+                        </a>
+                        <a
+                                href="/library?account_id=2437"><img
+                                src="../images/stacks-icon@2x.png"
+                                alt="icon"><span>书库</span>
+                        </a>
+                        <a
+                                href="/top?account_id=2437">
+                            <img src="../images/trophy@2.png"
+                                 alt="icon"><span>排行榜</span>
+                        </a>
+                        <a
+                                href="/search?account_id=2437"><img
+                                src="../images/search@2x.png" alt="icon"><span>搜索</span>
+                        </a>
+                        <a
+                                href="/pay/recharge?account_id=2437"><img
+                                src="../images/chong@2x.png" alt="icon"><span>充值</span>
+                        </a>
+                        <a
+                                href="/user?account_id=2437">
+                            <img src="../images/user@4.png"
+                                 alt="icon"><span>个人中心</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="btn-groups am-segment" role="tablist">
@@ -272,6 +293,24 @@
         let menu_btn = root.querySelector('.menu-btn');
         let openMenu = root.querySelector('.openMenu');
         let am_segment_item = document.getElementsByClassName('am-segment-item');
+        let style3_top_tag = document.getElementsByClassName('style3-top-tag');
+
+
+        for (let i = 0; i < style3_top_tag.length; ++i) {//男版样式
+            if (i < 3) {
+                style3_top_tag[i].style.backgroundImage = 'url(../images/style3-top' + (i + 5) + '.png)';
+            } else {
+                style3_top_tag[i].style.backgroundImage = 'url(../images/style3-top8.png)';
+            }
+        }
+
+//        for (let i = 0; i < style3_top_tag.length; ++i) {//女版样式
+//            if (i < 3) {
+//                style3_top_tag[i].style.backgroundImage = 'url(../images/style3-top' + (i + 1) + '.png)';
+//            } else {
+//                style3_top_tag[i].style.backgroundImage = 'url(../images/style3-top4.png)';
+//            }
+//        }
 
         function tabEffect(am_segment_item, tabEffect1, tabEffect2) {
             for (let i = 0; i < am_segment_item.length; i++) {
@@ -289,8 +328,10 @@
             }
         }
 
-        let tabEffect1 = 'am-segment-item am-segment-item-selected am-segment_item_selected_0';
-        let tabEffect2 = 'am-segment-item am-segment_item_selected_1';
+        let tabEffect1 = 'am-segment-item am-segment-item-selected am-segment_item_selected_0';//男版样式
+        let tabEffect2 = 'am-segment-item am-segment_item_selected_1';//男版样式
+//        let tabEffect1 = 'am-segment-item am-segment-item-selected am-segment_item_selected_00';//女版样式
+//        let tabEffect2 = 'am-segment-item am-segment_item_selected_11';//女版样式
         tabEffect(am_segment_item, tabEffect1, tabEffect2);
 
         nav_left.onclick = function () {

@@ -75,22 +75,43 @@
                 </div>
                 <div class="menu-btn"></div>
                 <div class="menu-modal-bg openMenu noMenu">
-                    <div class="menu-content"><a href="/home?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/home@2x.png" alt="icon"><span>首页</span></a><a
-                            href="/myBookshelf?account_id=2437"><img
-                            src="//s.weituibao.com/static/1509005020911/bookshelf-icon%402x.png"
-                            alt="icon"><span>书架</span></a><a href="/readHistory?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/history@2x.png" alt="icon"><span>阅读历史</span></a><a
-                            href="/library?account_id=2437"><img
-                            src="//s.weituibao.com/static/1509005020911/stacks-icon%402x.png" alt="icon"><span>书库</span></a><a
-                            href="/top?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/2.png"
-                                                             alt="icon"><span>排行榜</span></a><a
-                            href="/search?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/search@2x.png" alt="icon"><span>搜索</span></a><a
-                            href="/pay/recharge?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/chong@2x.png" alt="icon"><span>充值</span></a><a
-                            href="/user?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/4.png"
-                                                              alt="icon"><span>个人中心</span></a></div>
+                    <div class="menu-content">
+                        <a
+                                href="/home?account_id=2437"><img
+                                src="../images/home@2x.png" alt="icon"><span>首页</span>
+                        </a>
+                        <a
+                                href="/myBookshelf?account_id=2437"><img
+                                src="../images/bookshelf-icon@2x.png"
+                                alt="icon"><span>书架</span>
+                        </a>
+                        <a href="/readHistory?account_id=2437"><img
+                                src="../images/history@2x.png" alt="icon"><span>阅读历史</span>
+                        </a>
+                        <a
+                                href="/library?account_id=2437"><img
+                                src="../images/stacks-icon@2x.png"
+                                alt="icon"><span>书库</span>
+                        </a>
+                        <a
+                                href="/top?account_id=2437">
+                            <img src="../images/trophy@2.png"
+                                 alt="icon"><span>排行榜</span>
+                        </a>
+                        <a
+                                href="/search?account_id=2437"><img
+                                src="../images/search@2x.png" alt="icon"><span>搜索</span>
+                        </a>
+                        <a
+                                href="/pay/recharge?account_id=2437"><img
+                                src="../images/chong@2x.png" alt="icon"><span>充值</span>
+                        </a>
+                        <a
+                                href="/user?account_id=2437">
+                            <img src="../images/user@4.png"
+                                 alt="icon"><span>个人中心</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="book-list">
@@ -127,6 +148,19 @@
         let nav_left = root.querySelector('.nav-left');
         let menu_btn = root.querySelector('.menu-btn');
         let openMenu = root.querySelector('.openMenu');
+        let page_style3 = root.querySelector('.page-style3');
+        let bookshelf_icon = document.getElementsByClassName('bookshelf-icon');
+
+//        page_style3.className = 'page-style3 page-style3-female';//女版
+        page_style3.className = 'page-style3 page-style3-male';//男版
+
+
+        for (let i=0;i<bookshelf_icon.length;i++){
+            bookshelf_icon[i].onclick = function () {
+                let z = bookshelf_icon[i].className == 'bookshelf-icon';
+                bookshelf_icon[i].className = z?'bookshelf-icon bookshelf-icon-active':'bookshelf-icon';
+            };
+        }
 
         nav_left.onclick = function () {
             window.history.go(-1);

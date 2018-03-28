@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
     <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
+    <script type="text/javascript" src="../mui/js/mui.min.js"></script>
     <link rel="stylesheet" href="../css/personal.css">
+    <link rel="stylesheet" href="../mui/css/mui.css">
     <title>看书网 | 让快乐更简单</title>
     <script>
         !function () {
@@ -72,22 +74,43 @@
                 <div class="title">书库</div>
                 <div class="menu-btn"></div>
                 <div class="menu-modal-bg openMenu noMenu">
-                    <div class="menu-content"><a href="/home?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/home@2x.png" alt="icon"><span>首页</span></a><a
-                            href="/myBookshelf?account_id=2437"><img
-                            src="//s.weituibao.com/static/1509005020911/bookshelf-icon%402x.png"
-                            alt="icon"><span>书架</span></a><a href="/readHistory?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/history@2x.png" alt="icon"><span>阅读历史</span></a><a
-                            href="/library?account_id=2437"><img
-                            src="//s.weituibao.com/static/1509005020911/stacks-icon%402x.png" alt="icon"><span>书库</span></a><a
-                            href="/top?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/2.png"
-                                                             alt="icon"><span>排行榜</span></a><a
-                            href="/search?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/search@2x.png" alt="icon"><span>搜索</span></a><a
-                            href="/pay/recharge?account_id=2437"><img
-                            src="//s.weituibao.com/static/1507859585703/chong@2x.png" alt="icon"><span>充值</span></a><a
-                            href="/user?account_id=2437"><img src="//s.weituibao.com/static/1507789770161/4.png"
-                                                              alt="icon"><span>个人中心</span></a></div>
+                    <div class="menu-content">
+                        <a
+                                href="/home?account_id=2437"><img
+                                src="../images/home@2x.png" alt="icon"><span>首页</span>
+                        </a>
+                        <a
+                                href="/myBookshelf?account_id=2437"><img
+                                src="../images/bookshelf-icon@2x.png"
+                                alt="icon"><span>书架</span>
+                        </a>
+                        <a href="/readHistory?account_id=2437"><img
+                                src="../images/history@2x.png" alt="icon"><span>阅读历史</span>
+                        </a>
+                        <a
+                                href="/library?account_id=2437"><img
+                                src="../images/stacks-icon@2x.png"
+                                alt="icon"><span>书库</span>
+                        </a>
+                        <a
+                                href="/top?account_id=2437">
+                            <img src="../images/trophy@2.png"
+                                 alt="icon"><span>排行榜</span>
+                        </a>
+                        <a
+                                href="/search?account_id=2437"><img
+                                src="../images/search@2x.png" alt="icon"><span>搜索</span>
+                        </a>
+                        <a
+                                href="/pay/recharge?account_id=2437"><img
+                                src="../images/chong@2x.png" alt="icon"><span>充值</span>
+                        </a>
+                        <a
+                                href="/user?account_id=2437">
+                            <img src="../images/user@4.png"
+                                 alt="icon"><span>个人中心</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="option">
@@ -101,322 +124,61 @@
                     </div>
                 </div>
             </div>
-            <div class="book-list">
+
+            <div class="book-list mui-table-view">
                 <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201711-23-1511400204632.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096"><span
-                            class="name">超级强兵当奶爸</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096">啥，老子堂堂的漠北兵王，居然要当奶爸？好吧，看在孩子他妈貌若天仙的份儿上，老子勉强答应了……</a>
+                    <div class="img">
+                        <a class="home3-book-item"
+                           href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096">
+                            <i class="timeTag"></i>
+                            <img src="http://cdn-novel.weituibao.com/0-temp-201711-23-1511400204632.jpg">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096">
+                            <span class="name">超级强兵当奶爸</span>
+                        </a>
+                        <div class="desc">
+                            <a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2096">啥，老子堂堂的漠北兵王，居然要当奶爸？好吧，看在孩子他妈貌若天仙的份儿上，老子勉强答应了……</a>
                         </div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">更新中</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1677"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201709-28-1506595307919.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1677"><span
-                            class="name">我的未婚妻是总裁</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1677">兵王之王受伤退伍回归都市，与冰山总裁未婚妻同住一个屋檐下，拉手，不准，接吻，不许，那就一起来吧。
-                            和未婚妻闺蜜暧昧，和主妇谈人生，冒充白领丽人男朋友，扮猪吃老虎。
-                            各路高手蜂拥而来，本想过平凡日子的叶轩很无奈，为亲人，为爱人，为兄弟，狂战天下，无所畏惧！
-                            且看一代杀神如何纵横都市，泡妞杀人，破除阴谋，成就无上威名，美女全收，走上人生巅峰！</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1660"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201709-26-1506409633341.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1660"><span
-                            class="name">硬汉保镖要上天</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1660">叶凌天，神秘部队退伍军人，为了给妹妹凑集五十万的治疗费用不得不给三元集团的千金小姐李雨欣当贴身保镖。且看经历过太多生死的铮铮硬汉叶凌天如何在这个繁华都市里走出属于自己的一条不平凡的路来。</a>
+                        <div class="count clearfix">
+                            <span class="author tag">都市言情</span>
+                            <span class="status tag">更新中</span>
                         </div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">更新中</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4849"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201803-20-1521522118985.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4849"><span
-                            class="name">捕获女上司</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4849">江帆和哥哥嫂嫂合租了一套房子，嫂子很漂亮，终于有一天江帆忍不住了……</a>
-                        </div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4848"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201803-20-1521522130652.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4848"><span
-                            class="name">成长的代价</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=4848">我的童年很悲惨，但我绝不向命运屈服</a>
-                        </div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2099"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201711-23-1511400192342.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2099"><span
-                            class="name">兵王卸甲</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2099">超级兵王秦渊，卸甲归田重回都市，将当年的谜题一一解开！曾经扬名世界的兵王，让所有人为之折服！</a>
-                        </div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">更新中</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2838"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201803-08-1520471422924.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2838"><span
-                            class="name">82838</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2838">身患绝症最后一搏的老警察，
-                            为婴儿奶粉和房贷不择手段的私家侦探，
-                            阴魂不散的神秘杀手，
-                            三路人马的目标都是租住在城乡结合部出租屋内的大叔与萝莉，
-                            暴雨来临前傍晚，每一个人都站在了命运的三岔口，
-                            谁是盟友，谁是敌人，
-                            是引颈就戮还是绝地逆袭，
-                            无路可退的黑车司机刘汉东面临最后的抉择。</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2101"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201711-23-1511405766138.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2101"><span
-                            class="name">神医惊天录</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2101">陆明被老头子从昆仑山上赶下来去执行两个任务，给美女治病、做保镖，巨大的别墅中三个校花级美女与之同居，风生水起的日子开始了……
-                            高超的医术包治各种妇科病……
-                            出神入化的功夫，御女无数……
-                            从小随身携带的一枚黑色戒指中所隐藏的惊天之秘……</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3562"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201801-11-1515632881378.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3562"><span
-                            class="name">阴阳风水事</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3562">梁树出生就被爷爷梁九抱养，但是属于难得一见的六火攻心体质，被爷爷一直养在棺材里，才度过一劫。但是到了十八岁，体内形成血阴果，被鬼魂盯上。梁树在爷爷的帮助下，脱离了村子，去找徐天师救命。在盘龙镇找到了徐天师，经过一番经历之后，顺利解决了体内的血阴果，机缘之下，还得到了世间罕见的冰火蚕王。并被爷爷告知这冰火蚕王只能在体内七年，七年之后，后果难料。梁树加入爷爷的风水门，却被告知必须完成一项使命，找到七朝的龙脉，进而得到七朝龙牌。收集到七块龙牌之后，不但能解冰火蚕王，还能解开身世之谜。进而在徐天师和新结实的女警陈冰的帮助下，进行了一番又一番的历险……</a>
-                        </div>
-                        <div class="count clearfix"><span class="author tag">悬疑灵异</span><span
-                                class="status tag">更新中</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3535"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201801-08-1515382113297.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3535"><span
-                            class="name">秘密规则</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3535">深度揭秘按摩业不为人知的秘密，细述我那些年不堪的经历，靠着手段跟规则游戏，步步上位，力挽狂澜！</a>
-                        </div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2839"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201712-22-1513930482172.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2839"><span
-                            class="name">82839</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2839">爱情到底是什么，又产生何处呢？我有些想不透，或许所谓的爱情只是一只彩色的蝴蝶，看起来美丽，却永远也不能接近，倘若你真的想把她攥紧在手里，她便会挣扎，然后在挣扎中摩擦掉了所有的色彩，从此苍白。
-                            我好似有点明白，为什么我会如此的小心翼翼了，因为害怕触及不到她的灵魂，却擦掉了那层美丽的色彩！
-                            -------------------------------------
-                            一个三无男人与美丽女房客的纯爱故事。</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1131"><img
-                            src="http://cdn-novel.weituibao.com/novel-1131-cover-4470.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1131"><span
-                            class="name">都市超级雇佣兵王</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1131">昔日龙刺少主，国际首屈一指的雇佣兵组织冥殿的首脑，受命回归都市，与相互看不上眼的美女总裁结婚。
-                            老婆嫌弃不要紧，自有麻辣警花、妩媚总监、傲娇萝莉、甜美大学生送上门。
-                            女人多了麻烦也多，不要紧，哥最不缺的就是解决麻烦的实力。</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">更新中</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3526"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201801-08-1515382102145.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3526"><span
-                            class="name">沸腾英雄血</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3526">五年前，我为了最好的兄弟入狱。五年后，我出了狱，却发现这居然是好兄弟和女朋友的圈套，我最爱的他们，居然这般对我！
-                            血，正在沸腾！
-                            你们从我身上拿走的一切，我都要一个不剩的拿回去！</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2920"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201712-29-1514510375206.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2920"><span
-                            class="name">我跟女鬼谈恋爱</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2920">杨华在路上遇见了个女鬼，从此他的人生开始了翻天覆地的变化，战黑道，闯死城，一路热血！</a>
-                        </div>
-                        <div class="count clearfix"><span class="author tag">都市异能</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2835"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201712-22-1513930531965.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2835"><span
-                            class="name">82835</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2835">枪林弹雨，刀光剑影依然是我们不朽的英雄梦……</a>
-                        </div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2280"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201712-06-1512546746872.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2280"><span
-                            class="name">鬼生人</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2280">母亲已死，半年后开坟，我在坟里出生，我是鬼生人
-                            我天生阴体，注定一生是个道士，不然的话我绝对活不过十三岁。
-                            我的出生注定了我今后要走的路，注定要涉及许多不为人知的事情，别问我这个世界上有没有鬼，如果你想见鬼，烧纸吧，你的血写下亡魂的名字，我让它直接去找你。</a></div>
-                        <div class="count clearfix"><span class="author tag">悬疑灵异</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2098"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201711-20-1511164277134.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2098"><span
-                            class="name">都市血色风暴</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2098">他是战场上最强的利剑，是血色的风暴，他所到之处血雨腥风，却受命退伍，返回都市，开启了一段香艳而疯狂的征服之路。
-                            男人见了他色变，女人见了他‘变色’，无论是战场还是繁华都市，他都是最强大的男人，最碉堡的战兵。</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1207"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201708-30-1504070887233.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1207"><span
-                            class="name">极品相师美人恩</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=1207">“断天下不平之事，品芸芸众生之相。”
-                            叶枫无意间获得了大明开国军师刘伯温的《青田遗书》，凭借着书中的风水、命理、医药、奇术，纵横都市。</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3"><img
-                            src="http://cdn-novel.weituibao.com/novel-3-cover-9748.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3"><span
-                            class="name">女总裁的超级保镖</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3">一代地下王者回归都市，竟被父亲以死逼婚。虽然媳妇是个万人迷的女总裁，但因为性子高冷，他决定拒婚。于是，他与娇柔貌美的美女房东住在了一个屋里；与老婆公司的美女总监一起工作；甚至跟可爱体贴的小姨子打成了一片……
-                            美女总裁不开森了：这是我男人，你们统统靠边站。</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">更新中</span></div>
-                    </div>
-                </div>
-                <div class="style3-book-item2 clearfix">
-                    <div class="img"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2843"><img
-                            src="http://cdn-novel.weituibao.com/0-temp-201712-22-1513930742575.jpg"></a></div>
-                    <div class="info"><a
-                            href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2843"><span
-                            class="name">82843</span></a>
-                        <div class="desc"><a
-                                href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=2843">不知道什么时候，生性凉薄，略显无耻的我，身边多了这样一群人。
-                            我失恋的时候，他们会说：“多大个事儿啊，娘们没了，明儿再找，如果你实在急用，那今晚我自己借你一宿！”
-                            他们总是在我茫然的时候，陪我在简陋的平房里喊着！
-                            “万般努力，我们只为出人头地！”</a></div>
-                        <div class="count clearfix"><span class="author tag">都市言情</span><span
-                                class="status tag">已完结</span></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="block-loading">
-                        <div class="am-activity-indicator am-activity-indicator-lg"><span
-                                class="am-activity-indicator-spinner am-activity-indicator-spinner-lg"
-                                aria-label="loading"></span></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="style3-go-top" style="display: none;"></div>
+        <div class="style3-go-top style3-go-top2" style="display: none;"></div>
     </div>
 </div>
+<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
+    $(document).ready(function () {
+        $(".style3-go-top").hide();
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 600) {
+                    $(".style3-go-top").fadeIn(500);
+                } else {
+                    $(".style3-go-top").fadeOut(500);
+                }
+            });
+            $(".style3-go-top").click(function () {
+                $('body,html').animate({scrollTop: 0}, 500);
+                return false;
+            });
+        });
+    });
     (function onGoPage() {
         let root = document.getElementById('root');
         let nav_left = root.querySelector('.nav-left');
         let menu_btn = root.querySelector('.menu-btn');
         let openMenu = root.querySelector('.openMenu');
+        let page_style3 = root.querySelector('.page-style3');
+
+//        page_style3.className = 'page-style3 page-style3-female';//女版
+        page_style3.className = 'page-style3 page-style3-male';//男版
 
         nav_left.onclick = function () {
             window.history.go(-1);
@@ -425,13 +187,68 @@
 
         menu_btn.onclick = function () {
             let open = menu_btn.className == 'menu-btn';
-            menu_btn.className = open?'menu-btn open':'menu-btn';
+            menu_btn.className = open ? 'menu-btn open' : 'menu-btn';
 
             let i = openMenu.className == 'menu-modal-bg openMenu noMenu';
-            openMenu.className = i?'menu-modal-bg openMenu':'menu-modal-bg openMenu noMenu';
+            openMenu.className = i ? 'menu-modal-bg openMenu' : 'menu-modal-bg openMenu noMenu';
         };
 
     })();
 </script>
+
+<script type="text/javascript">
+
+
+    mui.init({
+        pullRefresh: {
+            container: '#root',
+            up: {
+                contentrefresh: '正在加载...',
+                callback: pullupRefresh
+            }
+        }
+    });
+    function pullupRefresh() {
+
+        let book_list = document.querySelector('.mui-table-view');
+        var count = 0;
+
+        setTimeout(function () {
+            mui('#root').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+
+            let cells = document.getElementsByClassName('style3-book-item2');
+
+            for (var i = cells.length, len = i + 2; i < len; i++) {
+
+                var node = document.createElement('div');
+
+                node.className = 'style3-book-item2 clearfix';
+                node.innerHTML =
+                        '<div class="img">' +
+                        '<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3562">' +
+                        '<img src="http://cdn-novel.weituibao.com/0-temp-201801-11-1515632881378.jpg">' +
+                        '</a>' +
+                        '</div>' +
+                        '<div class="info">' +
+                        '<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3562">' +
+                        '<span class="name">阴阳风水事' + i + '</span>' +
+                        '</a>' +
+                        '<div class="desc">' +
+                        '<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3562">梁树出生就被爷爷梁九抱养，但是属于难得一见的六火攻心体质，被爷爷一直养在棺材里，才度过一劫。但是到了十八岁，体内形成血阴果，被鬼魂盯上。梁树在爷爷的帮助下，脱离了村子，去找徐天师救命。在盘龙镇找到了徐天师，经过一番经历之后，顺利解决了体内的血阴果，机缘之下，还得到了世间罕见的冰火蚕王。并被爷爷告知这冰火蚕王只能在体内七年，七年之后，后果难料。梁树加入爷爷的风水门，却被告知必须完成一项使命，找到七朝的龙脉，进而得到七朝龙牌。收集到七块龙牌之后，不但能解冰火蚕王，还能解开身世之谜。进而在徐天师和新结实的女警陈冰的帮助下，进行了一番又一番的历险……</a>' +
+                        '</div>' +
+                        '<div class="count clearfix">' +
+                        '<span class="author tag">悬疑灵异</span>' +
+                        '<span class="status tag">更新中</span>' +
+                        '</div>' +
+                        '</div>';
+                book_list.appendChild(node);
+            }
+        }, 2000);
+
+    }
+
+
+</script>
+
 </body>
 </html>
