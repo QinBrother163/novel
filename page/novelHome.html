@@ -8,9 +8,9 @@
     <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
     <link rel="stylesheet" href="../css/personal.css">
     <title>看书网 | 让快乐更简单</title>
-    <script>
+    <script type="text/javascript">
         !function () {
-            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",
+            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}ins,a{text-decoration:none}",
                     b = document.createElement("style");
             if (document.getElementsByTagName("head")[0].appendChild(b), b.styleSheet) b.styleSheet.disabled || (b.styleSheet.cssText = a); else try {
                 b.innerHTML = a
@@ -65,6 +65,7 @@
     </script>
 </head>
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__"><symbol viewBox="0 0 44 44" id="right"><title>Operation Icons Copy 4</title><defs><path id="right_a" d="M-129-845h24v24h-24z"></path></defs><clipPath id="right_b"><use xlink:href="#right_a" overflow="visible"></use></clipPath><g clip-path="url(#right_b)"><defs><path id="right_c" d="M-903-949H947V996H-903z"></path></defs><clipPath id="right_d"><use xlink:href="#right_c" overflow="visible"></use></clipPath></g><path d="M30.601 21.399L18.368 9.166l-2.121 2.121 10.118 10.119-10.118 10.118 2.121 2.121 12.233-12.233-.006-.006z"></path></symbol></svg>
 
 <div id="root">
     <div data-reactroot="" class="page-style3 page-style3-male">
@@ -113,13 +114,26 @@
                 </div>
             </div>
             <div class="base-info">
-                <div class="img"><img alt="" src="../images/novel/novel-8.jpg">
+                <div class="img">
+                    <img alt="" src="../images/novel/novel-8.jpg">
+                    <span class="free-icon"></span>
                 </div>
                 <div class="info">
                     <div class="name">超级强兵当奶爸</div>
-                    <div class="status"><span class="status-tag">都市言情</span><span class="category">更新中</span></div>
-                    <p class="count"><span><!-- react-text: 20 -->564<!-- /react-text --><!-- react-text: 21 -->万字
-                        <!-- /react-text --></span></p></div>
+                    <div class="status">
+                        <span class="status-tag">都市言情</span>
+                        <span class="category">更新中</span>
+                    </div>
+                    <p class="count">
+                        <span>564万字</span>
+                    <!--<p class="freetime">-->
+                    <!--<div class="timecut3 size-small"><span class="time-item bg-active">01</span><i>:</i><span-->
+                            <!--class="time-item">02</span><i>:</i><span class="time-item">57</span><i>:</i><span-->
+                            <!--class="time-item">11</span>-->
+                    <!--</div>-->
+                    <!--</p>-->
+                    </p>
+                </div>
             </div>
             <div class="book-actions"><a
                     href="javascript:void(0);" onclick="go_pageNovelReading()"
@@ -144,17 +158,32 @@
                         href="../page/novelDirectory.html"
                         class="to-all active">全部目录</a></div>
             </div>
-            <div class="home3-block dashang-list">
-                <div class="shang-head"><h3 class="clearfix"><!-- react-text: 46 -->打赏记录<!-- /react-text --><span
-                        class="count">(收到打赏15880书币)</span></h3><span class="dashang-btn"></span></div>
-                <div class="people-list">
+
+            <div style="display: block" class="home3-block dashang-list">
+                <div class="shang-head">
+                    <h3 class="clearfix">打赏记录
+                        <span class="count">(收到打赏15880书币)</span>
+                    </h3>
+                    <span class="dashang-btn"></span>
+                </div>
+
+                <!--没有打赏记录的div-->
+                <div style="display: block" class="reword-no-data3">
+                    <img src="//s.weituibao.com/static/1508403793500/shang%402x.png">
+                    <p>这么好看的书，快来第一个支持它</p>
+                </div>
+                <!--没有打赏记录的div-->
+
+
+                <div style="display: none" class="people-list">
                     <div>
                         <div class="list-item">
                             <div class="avatar">
                                 <img
-                                    src="http://wx.qlogo.cn/mmopen/EcZfJ0xCjH65VvCnaoMAVkjb0TVGmdeN4YR6dPbzR738A7HWry5YWOlmc3bvYjLlKvISqUhn4uelhEicfvbLOHDbEI3yicqHbo/0"
-                                    alt="">
-                                <span class="icon-reward" style="background-image: url('../images/gold@2x.png');"></span>
+                                        src="http://wx.qlogo.cn/mmopen/EcZfJ0xCjH65VvCnaoMAVkjb0TVGmdeN4YR6dPbzR738A7HWry5YWOlmc3bvYjLlKvISqUhn4uelhEicfvbLOHDbEI3yicqHbo/0"
+                                        alt="">
+                                <span class="icon-reward"
+                                      style="background-image: url('../images/gold@2x.png');"></span>
                             </div>
                             <div class="name">🐳左老师。</div>
                             <div class="reward"><!-- react-text: 57 -->1676<!-- /react-text --><!-- react-text: 58 -->书币
@@ -187,82 +216,49 @@
                         </svg>
                     </a></div>
             </div>
-            <div class="home3-block comment-wrap"><h3 class="clearfix"><!-- react-text: 81 -->评论
-                <!-- /react-text --><span class="count">(11条评论)</span></h3><a class="comment-btn"
-                                                                              href="novelDiscuss.html"></a>
+
+
+            <div style="display: block" class="home3-block comment-wrap">
+                <h3 class="clearfix">评论
+                    <span class="count">(11条评论)</span>
+                </h3>
+                <a class="comment-btn" href="novelDiscuss.html"></a>
                 <div class="comment-list">
-                    <div class="comment-item">
-                        <div class="top-area"><img class="avatar"
-                                                   src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLB5eLQn4L4icHia0UsXdfqkJEia7tlgG0oeEf4CIFthr1z0HMNA2Cy3RaLr7KmvbIdoEXybK9ScYNIlw/0"
-                                                   alt="">
-                            <p>嘉嘉B租男爱</p><span class="click-like">17</span></div>
-                        <div class="summary-area"><a
-                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=7313&amp;reply_name=%E5%98%89%E5%98%89B%E7%A7%9F%E7%94%B7%E7%88%B1">不错。。我第一次看小说。对这部小说非常感兴趣</a>
-                            <div><span class="date">2017-11-29 17:14:27</span><a
-                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=7313&amp;reply_name=%E5%98%89%E5%98%89B%E7%A7%9F%E7%94%B7%E7%88%B1"
-                                    class="reply-count"><!-- react-text: 118 -->回复<!-- /react-text --></a></div>
-                        </div>
+
+
+                    <!--没有评论内容的div-->
+                    <div style="display: none" class="no-comment">
+                        <img src="//s.weituibao.com/static/61j0c.png" alt="">
+                        <p>还没有人评论，抢个沙发吧</p>
                     </div>
-                    <div class="comment-item">
-                        <div class="top-area"><img class="avatar"
-                                                   src="http://wx.qlogo.cn/mmopen/KnibIIsVhiaibcurHvOkkMwRuXJ4aCiazFTUZMkleLrRUyBrtoFPZnxUaRngMomp5s7cHuA9FnGkfNvETqdZucibO2A6hBibIySCAq/132"
-                                                   alt="">
-                            <p>兵王</p><span class="click-like">7</span></div>
-                        <div class="summary-area"><a
-                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=30051&amp;reply_name=%E5%85%B5%E7%8E%8B">这书总体来说还行，不过有几个我需要说说，一是题目叫奶爸，应当多围绕这题去下笔，去做文章，这书中关于这方面的少，写泡妞的多
-                            二是既然是当兵的又是兵王，而且当兵时间八年，这当兵的理想坚定，信念坚定什么的，最强了，纵观全文，基本有个女的都可以把他推倒，可以委婉的写一写，请自爱，自重，什么的，一句话的事
-                            三是当兵的基本都是很爱家爱自己的老婆的，很少在外面沾花惹草，这书里，唉，基本上有个女的基本上都有他一腿，都想跟他上床，都想跟他生小孩子，这内容太多了，可读性不强，会引起反感，我需要没有写过书，但是这喜欢和不喜欢的，一看就知道，几点建议，不到之足请原谅，喜欢作者把当兵的理解理解啰！！！！！</a>
-                            <div><span class="date">2018-01-31 10:24:06</span><a
-                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=30051&amp;reply_name=%E5%85%B5%E7%8E%8B"
-                                    class="reply-count"><!-- react-text: 129 -->回复<!-- /react-text -->
-                                <!-- react-text: 130 -->（1）<!-- /react-text --></a></div>
-                        </div>
-                        <div class="reply-area"><p><span><!-- react-text: 134 -->1997<!-- /react-text -->
-                            <!-- react-text: 135 -->：<!-- /react-text --></span><span style="color: rgb(51, 51, 51);">小说而已，较真了就不是小说了，那叫历史</span>
-                        </p></div>
-                    </div>
-                    <div class="comment-item">
-                        <div class="top-area"><img class="avatar"
-                                                   src="http://wx.qlogo.cn/mmopen/FjUOibKGLZU7elTIaqiaWTP4XnJ5W5FLXH5gGELjXpb7c4pVbsC2sficw07pMxUmQwJ9ia0Vnye9jR4Hcqr38eS9swGgb3HyTCdP/0"
-                                                   alt="">
-                            <p>关爱</p><span class="click-like">6</span></div>
-                        <div class="summary-area"><a
-                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=16309&amp;reply_name=%E5%85%B3%E7%88%B1">这部小说还可以</a>
-                            <div><span class="date">2017-12-22 20:52:18</span><a
-                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=16309&amp;reply_name=%E5%85%B3%E7%88%B1"
-                                    class="reply-count"><!-- react-text: 147 -->回复<!-- /react-text --></a></div>
-                        </div>
-                    </div>
-                    <div class="comment-item">
-                        <div class="top-area"><img class="avatar"
-                                                   src="http://wx.qlogo.cn/mmopen/Q3auHgzwzM5bIQyHteAYQ3o2kt16Jqmq9OPcBzVAQ14icrk9bWWVeCY4nib8B7rxyFNWd2fnWPTcPfbGkXrvFrWw/0"
-                                                   alt="">
-                            <p>通辉商贸有限公司</p><span class="click-like">5</span></div>
-                        <div class="summary-area"><a
-                                href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=15643&amp;reply_name=%E9%80%9A%E8%BE%89%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8">很好(✪▽✪)，第一次看小说，非常精彩了，很值得看，不错</a>
-                            <div><span class="date">2017-12-20 20:50:20</span><a
-                                    href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=15643&amp;reply_name=%E9%80%9A%E8%BE%89%E5%95%86%E8%B4%B8%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
-                                    class="reply-count"><!-- react-text: 158 -->回复<!-- /react-text --></a></div>
-                        </div>
-                    </div>
+                    <!--没有评论内容的div-->
+
+
                     <div class="comment-item">
                         <div class="top-area">
-                            <img class="avatar" src="http://wx.qlogo.cn/mmopen/KnibIIsVhiaibcurHvOkkMwRuXJ4aCiazFTUZMkleLrRUyBrtoFPZnxUaRngMomp5s7cHuA9FnGkfNvETqdZucibO2A6hBibIySCAq/132" alt="">
-                            <p>兵王</p><span class="click-like">2</span>
+                            <img class="avatar"
+                                 src="http://wx.qlogo.cn/mmopen/FjUOibKGLZU7elTIaqiaWTP4XnJ5W5FLXH5gGELjXpb7c4pVbsC2sficw07pMxUmQwJ9ia0Vnye9jR4Hcqr38eS9swGgb3HyTCdP/0"
+                                 alt="">
+                            <p>关爱</p>
+                            <span class="click-like">6</span>
                         </div>
                         <div class="summary-area">
-                            <a href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=30069&amp;reply_name=%E5%85%B5%E7%8E%8B">对了，强烈建议，这书有个好的收尾，希望几个关键的人物都活下来</a>
+                            <a href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=16309&amp;reply_name=%E5%85%B3%E7%88%B1">这部小说还可以</a>
                             <div>
-                                <span class="date">2018-01-31 10:51:30</span>
-                                <a href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=30069&amp;reply_name=%E5%85%B5%E7%8E%8B"
-                                    class="reply-count"><!-- react-text: 169 -->回复<!-- /react-text -->
-                                </a>
+                                <span class="date">2017-12-22 20:52:18</span>
+                                <a href="/replyComment?account_id=2437&amp;novel_id=2096&amp;reply_id=16309&amp;reply_name=%E5%85%B3%E7%88%B1"
+                                   class="reply-count"><!-- react-text: 147 -->回复<!-- /react-text --></a>
                             </div>
                         </div>
                     </div>
-                    <div class="load-more load-more-discuss"><span>加载更多</span></div>
+
+                    <div class="load-more load-more-discuss">
+                        <span>加载更多</span>
+                    </div>
                 </div>
             </div>
+
+
             <div class="home3-block guess"><h3 class="clearfix">猜你喜欢</h3>
                 <div class="block-content clearfix">
                     <div class="list"><a class="home3-book-item"
@@ -348,8 +344,44 @@
         let ok_btn = document.querySelector('.ok-btn');
         let recharge_item = reward.getElementsByClassName('item');
         let click_like = document.getElementsByClassName('click-like');
+        let page_style3 = root.querySelector('.page-style3');
 
-        load_more_discuss.onclick = function () {
+        var cookie = {
+            set: function (key, val, time) {//设置cookie方法
+                var date = new Date(); //获取当前时间
+                var expiresDays = time;  //将date设置为n天以后的时间
+                date.setTime(date.getTime() + expiresDays * 24 * 3600 * 1000); //格式化为cookie识别的时间
+                document.cookie = key + "=" + val + ";expires=" + date.toGMTString();  //设置cookie
+            },
+            get: function (key) {//获取cookie方法
+                /*获取cookie参数*/
+                var getCookie = document.cookie.replace(/[ ]/g, "");  //获取cookie，并且将获得的cookie格式化，去掉空格字符
+                var arrCookie = getCookie.split(";"); //将获得的cookie以"分号"为标识 将cookie保存到arrCookie的数组中
+                var tips;  //声明变量tips
+                for (var i = 0; i < arrCookie.length; i++) {   //使用for循环查找cookie中的tips变量
+                    var arr = arrCookie[i].split("=");   //将单条cookie用"等号"为标识，将单条cookie保存为arr数组
+                    if (key == arr[0]) {  //匹配变量名称，其中arr[0]是指的cookie名称，如果该条变量为tips则执行判断语句中的赋值操作
+                        tips = arr[1];   //将cookie的值赋给变量tips
+                        break;   //终止for循环遍历
+                    }
+                }
+                return tips;
+            },
+            delete: function (key) { //删除cookie方法
+                var date = new Date(); //获取当前时间
+                date.setTime(date.getTime() - 10000); //将date设置为过去的时间
+                document.cookie = key + "=v; expires =" + date.toGMTString();//设置cookie
+            }
+        };
+        sex_type = cookie.get("sex_type");
+
+        if (sex_type == 1){
+            page_style3.className = 'page-style3 page-style3-male';//男版
+        }else{
+            page_style3.className = 'page-style3 page-style3-female';//女版
+        }
+
+//        load_more_discuss.onclick = function () {
 
 //            root.removeChild(root.querySelector('.load-more-discuss'));
 
@@ -372,10 +404,10 @@
 //
 //
 //            comment_list.appendChild(none);
-        };
+//        };
 
 
-        for (let i=0; i<recharge_item.length;i++){
+        for (let i = 0; i < recharge_item.length; i++) {
             recharge_item[i].onclick = function () {
                 for (let i = 0; i < recharge_item.length; i++) {
                     recharge_item[i].className = 'item';
@@ -384,53 +416,30 @@
             }
         }
 
-        for (let i=0;i<click_like.length;i++){
+        for (let i = 0; i < click_like.length; i++) {
             click_like[i].onclick = function () {
                 let t = click_like[i].className == 'click-like';
-                click_like[i].className = t?'click-like like':'click-like'
+                click_like[i].className = t ? 'click-like like' : 'click-like'
             };
         }
 
-        var cookie = {
-            set:function(key,val,time){//设置cookie方法
-                var date=new Date(); //获取当前时间
-                var expiresDays=time;  //将date设置为n天以后的时间
-                date.setTime(date.getTime()+expiresDays*24*3600*1000); //格式化为cookie识别的时间
-                document.cookie=key + "=" + val +";expires="+date.toGMTString();  //设置cookie
-            },
-            get:function(key){//获取cookie方法
-                /*获取cookie参数*/
-                var getCookie = document.cookie.replace(/[ ]/g,"");  //获取cookie，并且将获得的cookie格式化，去掉空格字符
-                var arrCookie = getCookie.split(";") ; //将获得的cookie以"分号"为标识 将cookie保存到arrCookie的数组中
-                var tips;  //声明变量tips
-                for(var i=0;i<arrCookie.length;i++){   //使用for循环查找cookie中的tips变量
-                    var arr=arrCookie[i].split("=");   //将单条cookie用"等号"为标识，将单条cookie保存为arr数组
-                    if(key==arr[0]){  //匹配变量名称，其中arr[0]是指的cookie名称，如果该条变量为tips则执行判断语句中的赋值操作
-                        tips=arr[1];   //将cookie的值赋给变量tips
-                        break;   //终止for循环遍历
-                    }
-                }
-                return tips;
-            },
-            delete:function(key){ //删除cookie方法
-                var date = new Date(); //获取当前时间
-                date.setTime(date.getTime()-10000); //将date设置为过去的时间
-                document.cookie = key + "=v; expires =" +date.toGMTString();//设置cookie
-            }
-        };
 
-        function getQueryVariable(variable)
-        {
+
+        function getQueryVariable(variable) {
             var query = window.location.search.substring(1);
             var vars = query.split("&");
-            for (var i=0;i<vars.length;i++) {
+            for (var i = 0; i < vars.length; i++) {
                 var pair = vars[i].split("=");
-                if(pair[0] == variable){return pair[1];}
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
             }
-            return(false);
+            return (false);
         }
+
         let page_url = getQueryVariable("pageUrl");
-        cookie.set("novelHomeUrl",page_url,1);
+
+        cookie.set("novelHomeUrl", page_url, 1);
         page_url = cookie.get("novelHomeUrl");
 
         nav_left.onclick = function () {
@@ -439,14 +448,14 @@
 
         menu_btn.onclick = function () {
             let open = menu_btn.className == 'menu-btn';
-            menu_btn.className = open?'menu-btn open':'menu-btn';
+            menu_btn.className = open ? 'menu-btn open' : 'menu-btn';
 
             let i = openMenu.className == 'menu-modal-bg openMenu noMenu';
-            openMenu.className = i?'menu-modal-bg openMenu':'menu-modal-bg openMenu noMenu';
+            openMenu.className = i ? 'menu-modal-bg openMenu' : 'menu-modal-bg openMenu noMenu';
         };
         dashang_btn.onclick = function () {
             let i = reward.className == 'reward_con noMenu';
-            reward.className = i?'reward_con':'reward_con noMenu';
+            reward.className = i ? 'reward_con' : 'reward_con noMenu';
         };
         am_modal_close.onclick = function () {
             reward.className = 'reward_con noMenu';
@@ -457,14 +466,14 @@
     })();
 
     function go_pageMoreReward() {
-        let url = window.location.protocol+'//' + window.location.host + window.location.pathname;
+        let url = window.location.protocol + '//' + window.location.host + window.location.pathname;
 //        console.log(url);
-        window.location.href = 'moreReward.html?pageUrl='+ url;
+        window.location.href = 'moreReward.html?pageUrl=' + url;
     }
     function go_pageNovelReading() {
-        let url = window.location.protocol+'//' + window.location.host + window.location.pathname;
+        let url = window.location.protocol + '//' + window.location.host + window.location.pathname;
 //        console.log(url);
-        window.location.href = 'novelReading.html?pageUrl='+ url;
+        window.location.href = 'novelReading.html?pageUrl=' + url;
     }
 </script>
 </body>

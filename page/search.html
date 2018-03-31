@@ -10,7 +10,7 @@
     <title>看书网 | 让快乐更简单</title>
     <script type="text/javascript">
         !function () {
-            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",
+            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}ins,a{text-decoration:none}",
                     b = document.createElement("style");
             if (document.getElementsByTagName("head")[0].appendChild(b), b.styleSheet) b.styleSheet.disabled || (b.styleSheet.cssText = a); else try {
                 b.innerHTML = a
@@ -90,102 +90,398 @@
     <div data-reactroot="" class="page-style3 page-style3-male">
         <div class="style3-search-page">
             <button class="keyboard" style="display: none;">唤起软键盘</button>
-            <div class="component-header-wrap-3"><span class="imgicon nav-left"></span>
+            <div class="component-header-wrap-3">
+                <span class="imgicon nav-left"></span>
                 <div class="title">
-                    <div class="style3-searchbar"><span class="search-icon"></span>
-                        <form action="#"><input type="search" class="am-search-value" placeholder="输入书名/关键词" value="">
+                    <div class="style3-searchbar">
+                        <span class="search-icon"></span>
+                        <form action="#">
+                            <input type="search" class="am-search-value" placeholder="输入书名/关键词" value="">
                         </form>
+                        <svg id="input-cross" style="display: none"
+                             class="am-icon am-icon-cross-circle-o am-icon-xxs cancel-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cross-circle-o">
+                                <svg viewBox="0 0 48 48" id="cross-circle-o" width="100%" height="100%">
+                                    <title>step-48-错误-实心</title>
+                                    <path d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm.353-25.77l-7.593-7.593c-.797-.799-1.538-.822-2.263-.207-.724.614-.56 1.617-.124 2.067l7.852 7.847-7.721 7.723c-.726.728-.558 1.646-.065 2.177.494.532 1.554.683 2.312-.174l7.587-7.584 7.644 7.623c.796.799 1.608.725 2.211.146.604-.579.72-1.442-.075-2.24l-7.657-7.669 7.544-7.521c.811-.697.9-1.76.297-2.34-.92-.885-1.849-.338-2.264.078l-7.685 7.667z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </use>
+                        </svg>
                     </div>
                 </div>
                 <div class="menu-btn"></div>
                 <div class="menu-modal-bg openMenu noMenu">
                     <div class="menu-content">
-                        <a
-                                href="/home?account_id=2437"><img
-                                src="../images/home@2x.png" alt="icon"><span>首页</span>
+                        <a href="/home?account_id=2437">
+                            <img src="../images/home@2x.png" alt="icon">
+                            <span>首页</span>
                         </a>
-                        <a
-                                href="/myBookshelf?account_id=2437"><img
-                                src="../images/bookshelf-icon@2x.png"
-                                alt="icon"><span>书架</span>
+                        <a href="/myBookshelf?account_id=2437">
+                            <img src="../images/bookshelf-icon@2x.png" alt="icon">
+                            <span>书架</span>
                         </a>
-                        <a href="/readHistory?account_id=2437"><img
-                                src="../images/history@2x.png" alt="icon"><span>阅读历史</span>
+                        <a href="/readHistory?account_id=2437">
+                            <img src="../images/history@2x.png" alt="icon">
+                            <span>阅读历史</span>
                         </a>
-                        <a
-                                href="/library?account_id=2437"><img
-                                src="../images/stacks-icon@2x.png"
-                                alt="icon"><span>书库</span>
+                        <a href="/library?account_id=2437">
+                            <img src="../images/stacks-icon@2x.png" alt="icon">
+                            <span>书库</span>
                         </a>
-                        <a
-                                href="/top?account_id=2437">
-                            <img src="../images/trophy@2.png"
-                                                                 alt="icon"><span>排行榜</span>
+                        <a href="/top?account_id=2437">
+                            <img src="../images/trophy@2.png" alt="icon">
+                            <span>排行榜</span>
                         </a>
-                        <a
-                                href="/search?account_id=2437"><img
-                                src="../images/search@2x.png" alt="icon"><span>搜索</span>
+                        <a href="/search?account_id=2437"><img src="../images/search@2x.png" alt="icon">
+                            <span>搜索</span>
                         </a>
-                        <a
-                                href="/pay/recharge?account_id=2437"><img
-                                src="../images/chong@2x.png" alt="icon"><span>充值</span>
+                        <a href="/pay/recharge?account_id=2437">
+                            <img src="../images/chong@2x.png" alt="icon">
+                            <span>充值</span>
                         </a>
-                        <a
-                                href="/user?account_id=2437">
-                            <img src="../images/user@4.png"
-                                                                  alt="icon"><span>个人中心</span>
+                        <a href="/user?account_id=2437">
+                            <img src="../images/user@4.png" alt="icon">
+                            <span>个人中心</span>
                         </a>
                     </div>
                 </div>
             </div>
-            <div><a class="spring-activity-link"
-                    href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/special?account_id=2437&amp;topic_id=2&amp;source_type=search">
-                <!-- react-text: 3389 -->精彩短篇心动半价<!-- /react-text --><span class="right-arrow"></span></a>
+
+            <div id="Initialize-novel-container" style="display: block">
                 <div class="hot-keyword">
                     <div class="hot-keyword-title">热门搜索</div>
-                    <div class="hot-keyword-body"><span class="hot-key-item">超级强兵当奶爸</span><span class="hot-key-item">我的未婚妻是总裁</span><span
-                            class="hot-key-item">硬汉保镖要上天</span><span class="hot-key-item">捕获女上司</span><span
-                            class="hot-key-item">成长的代价</span><span class="hot-key-item">兵王卸甲</span><span
-                            class="hot-key-item">82838</span><span class="hot-key-item">神医惊天录</span></div>
+                    <div class="hot-keyword-body">
+                        <span class="hot-key-item">超级强兵当奶爸</span>
+                        <span class="hot-key-item">我的未婚妻是总裁</span>
+                        <span class="hot-key-item">硬汉保镖要上天</span>
+                        <span class="hot-key-item">捕获女上司</span>
+                        <span class="hot-key-item">成长的代价</span>
+                        <span class="hot-key-item">兵王卸甲</span>
+                        <span class="hot-key-item">82838</span>
+                        <span class="hot-key-item">神医惊天录</span>
+                    </div>
+                </div>
+                <!--历史记录-->
+                <div style="display: none" class="history-keyword">
+                    <div class="title history-title">历史记录</div>
+                    <!--<div class="search-keyword-item">混沌-->
+                    <!--<svg class="am-icon am-icon-cross-circle-o am-icon-xxs delete-icon">-->
+                    <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cross-circle-o">-->
+                    <!--<svg viewBox="0 0 48 48" id="cross-circle-o" width="100%" height="100%">-->
+                    <!--<title>step-48-错误-实心</title>-->
+                    <!--<path d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm.353-25.77l-7.593-7.593c-.797-.799-1.538-.822-2.263-.207-.724.614-.56 1.617-.124 2.067l7.852 7.847-7.721 7.723c-.726.728-.558 1.646-.065 2.177.494.532 1.554.683 2.312-.174l7.587-7.584 7.644 7.623c.796.799 1.608.725 2.211.146.604-.579.72-1.442-.075-2.24l-7.657-7.669 7.544-7.521c.811-.697.9-1.76.297-2.34-.92-.885-1.849-.338-2.264.078l-7.685 7.667z"-->
+                    <!--fill-rule="evenodd"></path>-->
+                    <!--</svg>-->
+                    <!--</use>-->
+                    <!--</svg>-->
+                    <!--</div>-->
+                    <!--<div class="search-keyword-item">吞天-->
+                    <!--<svg class="am-icon am-icon-cross-circle-o am-icon-xxs delete-icon">-->
+                    <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cross-circle-o">-->
+                    <!--<svg viewBox="0 0 48 48" id="cross-circle-o" width="100%" height="100%">-->
+                    <!--<title>step-48-错误-实心</title>-->
+                    <!--<path d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm.353-25.77l-7.593-7.593c-.797-.799-1.538-.822-2.263-.207-.724.614-.56 1.617-.124 2.067l7.852 7.847-7.721 7.723c-.726.728-.558 1.646-.065 2.177.494.532 1.554.683 2.312-.174l7.587-7.584 7.644 7.623c.796.799 1.608.725 2.211.146.604-.579.72-1.442-.075-2.24l-7.657-7.669 7.544-7.521c.811-.697.9-1.76.297-2.34-.92-.885-1.849-.338-2.264.078l-7.685 7.667z"-->
+                    <!--fill-rule="evenodd"></path>-->
+                    <!--</svg>-->
+                    <!--</use>-->
+                    <!--</svg>-->
+                    <!--</div>-->
+                    <!--<div class="search-keyword-item">星际-->
+                    <!--<svg class="am-icon am-icon-cross-circle-o am-icon-xxs delete-icon">-->
+                    <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cross-circle-o">-->
+                    <!--<svg viewBox="0 0 48 48" id="cross-circle-o" width="100%" height="100%">-->
+                    <!--<title>step-48-错误-实心</title>-->
+                    <!--<path d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm.353-25.77l-7.593-7.593c-.797-.799-1.538-.822-2.263-.207-.724.614-.56 1.617-.124 2.067l7.852 7.847-7.721 7.723c-.726.728-.558 1.646-.065 2.177.494.532 1.554.683 2.312-.174l7.587-7.584 7.644 7.623c.796.799 1.608.725 2.211.146.604-.579.72-1.442-.075-2.24l-7.657-7.669 7.544-7.521c.811-.697.9-1.76.297-2.34-.92-.885-1.849-.338-2.264.078l-7.685 7.667z"-->
+                    <!--fill-rule="evenodd"></path>-->
+                    <!--</svg>-->
+                    <!--</use>-->
+                    <!--</svg>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--索搜结果的div-->
+
+            <div style="display: none" class="novel-container yes-novel-container">
+                <div class="novel-container">
+                    <div id="result-list" class="result-list">
+
+                        <!--<div class="style3-book-item2 clearfix">-->
+                        <!--<div class="img">-->
+                        <!--<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3024">-->
+                        <!--<img src="http://cdn-novel.weituibao.com/novel-3024-cover-7766.jpg">-->
+                        <!--</a>-->
+                        <!--</div>-->
+                        <!--<div class="info">-->
+                        <!--<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3024"><span-->
+                        <!--class="name"><span>噬道<span class="active">吞天</span></span></span></a>-->
+                        <!--<div class="desc">-->
+                        <!--<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3024">　　意外坠崖，却又莫名重生；无心向道，却需被迫修行……-->
+                        <!--　　且看一个无心向道的猪脚，又是如何玩儿转异世大陆、征战六道轮回……进而谱写了一曲不为修道而修道的另类星空玄幻；铸就了自己残梦初醒、涅盘重生的道化轮回……-->
+                        <!--　　噬道吞天！-->
+                        <!--</a>-->
+                        <!--</div>-->
+                        <!--<div class="count clearfix">-->
+                        <!--<span class="author tag">玄幻仙侠</span>-->
+                        <!--<span class="status tag">已完结</span>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                    </div>
+                </div>
+            </div>
+            <!--索搜没有内容的div-->
+            <div style="display: none" class="novel-container no-novel-container">
+                <div class="novel-container">
+                    <div class="result-list"></div>
+                    <div>
+                        <div class="no-result">暂无搜索结果，换个关键词试试</div>
+                        <div class="divide-line"></div>
+                        <div class="hot-keyword">
+                            <div class="hot-keyword-title">热门搜索</div>
+                            <div class="hot-keyword-body"><span class="hot-key-item">圣体通天</span>
+                                <span class="hot-key-item">82859</span>
+                                <span class="hot-key-item">护花狂龙</span>
+                                <span class="hot-key-item">兵王卸甲</span>
+                                <span class="hot-key-item">超级强兵当奶爸</span>
+                                <span class="hot-key-item">捕获女上司</span>
+                                <span class="hot-key-item">都市血色风暴</span>
+                                <span class="hot-key-item">校花的风流保镖</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</div>
+<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
-    (function onGoPage() {
+    $(function () {
+
+        let arr = ['混沌', '11'];
+        //查找不到显示的div
+        let no_novel_container = document.querySelector('.no-novel-container');
+        //查找书籍显示的div
+        let yes_novel_container = document.querySelector('.yes-novel-container');
+        //原本的显示的div
+        let Initialize_novel_container = document.querySelector('#Initialize-novel-container');
+        //插入书籍的div
+        let result_list = document.querySelector('#result-list');
+        //搜索的XX
+        let input_cross = document.querySelector('#input-cross');
+        //历史记录外层div
+        let history_keyword = document.querySelector('.history-keyword');
+        //历史记录里面标题div
+        let history_title = document.querySelector('.history-title');
+        //历史记录里面的索搜记录内容
+        let search_keyword_item = document.getElementsByClassName('search-keyword-item');
+
+
+        var cookie = {
+            //设置cookie方法
+            set: function (key, val, time) {
+                //获取当前时间
+                var date = new Date();
+                //将date设置为n天以后的时间
+                var expiresDays = time;
+                //格式化为cookie识别的时间
+                date.setTime(date.getTime() + expiresDays * 24 * 3600 * 1000);
+                //设置cookie
+                document.cookie = key + "=" + val + ";expires=" + date.toGMTString();
+            },
+            //获取cookie方法
+            get: function (key) {
+                //获取cookie，并且将获得的cookie格式化，去掉空格字符
+                var getCookie = document.cookie.replace(/[ ]/g, "");
+                //将获得的cookie以"分号"为标识 将cookie保存到arrCookie的数组中
+                var arrCookie = getCookie.split(";");
+                var tips;
+                //使用for循环查找cookie中的tips变量
+                for (var i = 0; i < arrCookie.length; i++) {
+                    //将单条cookie用"等号"为标识，将单条cookie保存为arr数组
+                    var arr = arrCookie[i].split("=");
+                    //匹配变量名称，其中arr[0]是指的cookie名称，如果该条变量为tips则执行判断语句中的赋值操作
+                    if (key == arr[0]) {
+                        //将cookie的值赋给变量tips
+                        tips = arr[1];
+                        break;
+                    }
+                }
+                return tips;
+            },
+            //删除cookie方法
+            delete: function (key) {
+                var date = new Date();
+                //将date设置为过去的时间
+                date.setTime(date.getTime() - 10000);
+                //设置cookie
+                document.cookie = key + "=v; expires =" + date.toGMTString();
+            }
+        };
+
+
+        function createBookNode() {
+            var node = document.createElement('div');
+
+            node.className = 'style3-book-item2 clearfix';
+            node.innerHTML =
+                    '<div class="img">' +
+                    '<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3024">' +
+                    '<img src="http://cdn-novel.weituibao.com/novel-3024-cover-7766.jpg">' +
+                    '</a>' +
+                    '</div>' +
+                    '<div class="info">' +
+                    '<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3024"><span class="name"><span>噬道<span class="active">吞天</span></span></span></a>' +
+                    '<div class="desc">' +
+                    '<a href="https://wxf58a44d9e1aa6aa6.wx.mxs.com/book?account_id=2437&amp;novel_id=3024">　　意外坠崖，却又莫名重生；无心向道，却需被迫修行……且看一个无心向道的猪脚，又是如何玩儿转异世大陆、征战六道轮回……进而谱写了一曲不为修道而修道的另类星空玄幻；铸就了自己残梦初醒、涅盘重生的道化轮回……噬道吞天！ </a>' +
+                    '</div>' +
+                    '<div class="count clearfix">' +
+                    '<span class="author tag">玄幻仙侠</span>' +
+                    '<span class="status tag">已完结</span>' +
+                    '</div>' +
+                    '</div>';
+
+            result_list.appendChild(node);
+        }
+
+        function createHistoryRecordNode(val) {
+            var node = document.createElement('div');
+
+            node.className = 'search-keyword-item';
+            node.innerHTML = val +
+                    '<svg class="am-icon am-icon-cross-circle-o am-icon-xxs delete-icon">' +
+                    '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cross-circle-o">' +
+                    '<svg viewBox="0 0 48 48" id="cross-circle-o" width="100%" height="100%">' +
+                    '<title>step-48-错误-实心</title>' +
+                    '<path d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm.353-25.77l-7.593-7.593c-.797-.799-1.538-.822-2.263-.207-.724.614-.56 1.617-.124 2.067l7.852 7.847-7.721 7.723c-.726.728-.558 1.646-.065 2.177.494.532 1.554.683 2.312-.174l7.587-7.584 7.644 7.623c.796.799 1.608.725 2.211.146.604-.579.72-1.442-.075-2.24l-7.657-7.669 7.544-7.521c.811-.697.9-1.76.297-2.34-.92-.885-1.849-.338-2.264.078l-7.685 7.667z" fill-rule="evenodd"></path>' +
+                    '</svg>' +
+                    '</use>' +
+                    '</svg>'+
+
+            history_keyword.insertBefore(node, history_title.nextSibling);
+            //历史记录里面的取消按钮
+            cancelHistoryBtn();
+        }
+
+//        取消按钮操作
+        function cancelInputBtn() {
+            document.querySelector('.am-search-value').value = null;
+            input_cross.style.display = 'none';
+        }
+
+//        查询val的内容
+        function queryInputVal() {
+            let othis = this;
+            let data;
+            $('.am-search-value').bind('input propertychange', function () {
+                othis.data = document.querySelector('.am-search-value').value;
+            });
+            return othis.data;
+        }
+
+        queryInputVal();
+
+
+        //监听取消按钮
+        function queryInputCancelBtn() {
+            $('.am-search-value').bind('input propertychange', function () {
+
+                let val = document.querySelector('.am-search-value').value;
+                if (val.length == null || val == '' || val == 0) {
+                    nodeSwitch(input_cross, Boolean = 'none');
+                } else {
+                    nodeSwitch(input_cross, Boolean = 'block');
+                }
+            });
+        }
+
+        queryInputCancelBtn();
+
+        // 历史记录里面的取消按钮操作
+        function cancelHistoryBtn() {
+            let delete_icon = document.getElementsByClassName('delete-icon');
+
+            for (let i = 0; i < delete_icon.length; i++) {
+                delete_icon[i].index = i;
+
+                delete_icon[i].onclick = function () {
+
+                    if (delete_icon.length == 1) {
+                        history_keyword.removeChild(search_keyword_item[0]);
+                    } else {
+                        history_keyword.removeChild(search_keyword_item[this.index]);
+                    }
+
+                    if (delete_icon.length == 0) {
+                        nodeSwitch(history_keyword, Boolean = 'none');
+                    }
+                }
+            }
+        }
+
+        function nodeSwitch(node, Boolean) {
+            node.style.display = Boolean;
+        }
+
+
+
+
+        input_cross.onclick = function () {
+            cancelInputBtn();
+            nodeSwitch(Initialize_novel_container, Boolean = 'block');
+        };
+
+
+        function clickInputCross() {
+            input_cross.onclick = function () {
+                cancelInputBtn();
+
+                nodeSwitch(Initialize_novel_container, Boolean = 'block');
+                nodeSwitch(history_keyword, Boolean = 'block');
+                nodeSwitch(no_novel_container, Boolean = 'none');
+                nodeSwitch(yes_novel_container, Boolean = 'none');
+                let inputVal = queryInputVal();
+
+                createHistoryRecordNode(inputVal);
+
+
+            };
+        }
+
+
+        function querySearch() {
+            $('.am-search-value').bind('search', function () {
+                let inputVal = queryInputVal();
+
+                if (inputVal == arr[1]) {
+                    nodeSwitch(Initialize_novel_container, Boolean = 'none');
+                    nodeSwitch(no_novel_container, Boolean = 'none');
+                    nodeSwitch(yes_novel_container, Boolean = 'block');
+                    createBookNode();
+
+//                    clickInputCross();
+                }
+                if (inputVal != arr[1]) {
+
+                    nodeSwitch(Initialize_novel_container, Boolean = 'none');
+                    nodeSwitch(no_novel_container, Boolean = 'block');
+
+                    clickInputCross();
+                }
+
+            });
+        }
+        querySearch();
+
+
         let root = document.getElementById('root');
         let nav_left = root.querySelector('.nav-left');
         let menu_btn = root.querySelector('.menu-btn');
         let openMenu = root.querySelector('.openMenu');
 
-        var cookie = {
-            set: function (key, val, time) {//设置cookie方法
-                var date = new Date(); //获取当前时间
-                var expiresDays = time;  //将date设置为n天以后的时间
-                date.setTime(date.getTime() + expiresDays * 24 * 3600 * 1000); //格式化为cookie识别的时间
-                document.cookie = key + "=" + val + ";expires=" + date.toGMTString();  //设置cookie
-            },
-            get: function (key) {//获取cookie方法
-                /*获取cookie参数*/
-                var getCookie = document.cookie.replace(/[ ]/g, "");  //获取cookie，并且将获得的cookie格式化，去掉空格字符
-                var arrCookie = getCookie.split(";"); //将获得的cookie以"分号"为标识 将cookie保存到arrCookie的数组中
-                var tips;  //声明变量tips
-                for (var i = 0; i < arrCookie.length; i++) {   //使用for循环查找cookie中的tips变量
-                    var arr = arrCookie[i].split("=");   //将单条cookie用"等号"为标识，将单条cookie保存为arr数组
-                    if (key == arr[0]) {  //匹配变量名称，其中arr[0]是指的cookie名称，如果该条变量为tips则执行判断语句中的赋值操作
-                        tips = arr[1];   //将cookie的值赋给变量tips
-                        break;   //终止for循环遍历
-                    }
-                }
-                return tips;
-            },
-            delete: function (key) { //删除cookie方法
-                var date = new Date(); //获取当前时间
-                date.setTime(date.getTime() - 10000); //将date设置为过去的时间
-                document.cookie = key + "=v; expires =" + date.toGMTString();//设置cookie
-            }
-        };
 
         function getQueryVariable(variable) {
             var query = window.location.search.substring(1);
@@ -198,7 +494,7 @@
             }
             return (false);
         }
-
+        Samsung Galaxy s8
         let page_url = getQueryVariable("pageUrl");
 
         cookie.set("indexUrl", page_url, 1);
@@ -207,6 +503,24 @@
             window.location.href = page_url;
         };
 
+        function go_pageHome() {
+            let url = window.location.protocol + '//' + window.location.host + window.location.pathname;
+//        console.log(url);
+            window.location.href = 'index.html?pageUrl=' + url;
+        }
+
+        function go_pageBookcase() {
+            let url = window.location.protocol + '//' + window.location.host + window.location.pathname;
+//        console.log(url);
+            window.location.href = 'page/bookcase.html?pageUrl=' + url;
+        }
+
+        function go_pageReadingHistory() {
+            let url = window.location.protocol + '//' + window.location.host + window.location.pathname;
+//        console.log(url);
+            window.location.href = 'page/readingHistory.html?pageUrl=' + url;
+        }
+
         menu_btn.onclick = function () {
             let open = menu_btn.className == 'menu-btn';
             menu_btn.className = open ? 'menu-btn open' : 'menu-btn';
@@ -214,8 +528,8 @@
             let i = openMenu.className == 'menu-modal-bg openMenu noMenu';
             openMenu.className = i ? 'menu-modal-bg openMenu' : 'menu-modal-bg openMenu noMenu';
         };
+    });
 
-    })();
 
 </script>
 </body>

@@ -10,7 +10,7 @@
     <title>看书网 | 让快乐更简单</title>
     <script type="text/javascript">
         !function () {
-            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",
+            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}ins,a{text-decoration:none}",
                     b = document.createElement("style");
             if (document.getElementsByTagName("head")[0].appendChild(b), b.styleSheet) b.styleSheet.disabled || (b.styleSheet.cssText = a); else try {
                 b.innerHTML = a
@@ -71,6 +71,45 @@
             <div class="component-header-wrap-3"><span class="imgicon nav-left"></span>
                 <div class="title">小说精选</div>
                 <div class="menu-btn"></div>
+                <div class="menu-modal-bg openMenu noMenu">
+                    <div class="menu-content">
+                        <a
+                                href="/home?account_id=2437"><img
+                                src="../images/home@2x.png" alt="icon"><span>首页</span>
+                        </a>
+                        <a
+                                href="/myBookshelf?account_id=2437"><img
+                                src="../images/bookshelf-icon@2x.png"
+                                alt="icon"><span>书架</span>
+                        </a>
+                        <a href="/readHistory?account_id=2437"><img
+                                src="../images/history@2x.png" alt="icon"><span>阅读历史</span>
+                        </a>
+                        <a
+                                href="/library?account_id=2437"><img
+                                src="../images/stacks-icon@2x.png"
+                                alt="icon"><span>书库</span>
+                        </a>
+                        <a
+                                href="/top?account_id=2437">
+                            <img src="../images/trophy@2.png"
+                                 alt="icon"><span>排行榜</span>
+                        </a>
+                        <a
+                                href="/search?account_id=2437"><img
+                                src="../images/search@2x.png" alt="icon"><span>搜索</span>
+                        </a>
+                        <a
+                                href="/pay/recharge?account_id=2437"><img
+                                src="../images/chong@2x.png" alt="icon"><span>充值</span>
+                        </a>
+                        <a
+                                href="/user?account_id=2437">
+                            <img src="../images/user@4.png"
+                                 alt="icon"><span>个人中心</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="list-wrap">
                 <div>
@@ -682,12 +721,20 @@
     (function onGoPage() {
         let root = document.getElementById('root');
         let nav_left = root.querySelector('.nav-left');
+        let menu_btn = root.querySelector('.menu-btn');
+        let openMenu = root.querySelector('.openMenu');
 
         nav_left.onclick = function () {
             window.location.href = '../index.html';
         };
 
+        menu_btn.onclick = function () {
+            let open = menu_btn.className == 'menu-btn';
+            menu_btn.className = open?'menu-btn open':'menu-btn';
 
+            let i = openMenu.className == 'menu-modal-bg openMenu noMenu';
+            openMenu.className = i?'menu-modal-bg openMenu':'menu-modal-bg openMenu noMenu';
+        };
     })();
 </script>
 </body>
