@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
     <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
     <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
     <link rel="stylesheet" href="../css/personal.css">
@@ -261,7 +263,7 @@
 <script type="text/javascript">
     $(function () {
 
-        let arr = ['混沌', '11'];
+        let arr = ['22', '11'];
         //查找不到显示的div
         let no_novel_container = document.querySelector('.no-novel-container');
         //查找书籍显示的div
@@ -349,7 +351,6 @@
 
         function createHistoryRecordNode(val) {
             var node = document.createElement('div');
-
             node.className = 'search-keyword-item';
             node.innerHTML = val +
                     '<svg class="am-icon am-icon-cross-circle-o am-icon-xxs delete-icon">' +
@@ -359,9 +360,9 @@
                     '<path d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24zm.353-25.77l-7.593-7.593c-.797-.799-1.538-.822-2.263-.207-.724.614-.56 1.617-.124 2.067l7.852 7.847-7.721 7.723c-.726.728-.558 1.646-.065 2.177.494.532 1.554.683 2.312-.174l7.587-7.584 7.644 7.623c.796.799 1.608.725 2.211.146.604-.579.72-1.442-.075-2.24l-7.657-7.669 7.544-7.521c.811-.697.9-1.76.297-2.34-.92-.885-1.849-.338-2.264.078l-7.685 7.667z" fill-rule="evenodd"></path>' +
                     '</svg>' +
                     '</use>' +
-                    '</svg>'+
+                    '</svg>' +
 
-            history_keyword.insertBefore(node, history_title.nextSibling);
+                    history_keyword.insertBefore(node, history_title.nextSibling);
             //历史记录里面的取消按钮
             cancelHistoryBtn();
         }
@@ -427,16 +428,15 @@
         }
 
 
-
-
         input_cross.onclick = function () {
+            console.log('111');
             cancelInputBtn();
-            nodeSwitch(Initialize_novel_container, Boolean = 'block');
         };
 
 
         function clickInputCross() {
             input_cross.onclick = function () {
+                console.log('222');
                 cancelInputBtn();
 
                 nodeSwitch(Initialize_novel_container, Boolean = 'block');
@@ -452,29 +452,44 @@
         }
 
 
-        function querySearch() {
-            $('.am-search-value').bind('search', function () {
-                let inputVal = queryInputVal();
-
-                if (inputVal == arr[1]) {
-                    nodeSwitch(Initialize_novel_container, Boolean = 'none');
-                    nodeSwitch(no_novel_container, Boolean = 'none');
-                    nodeSwitch(yes_novel_container, Boolean = 'block');
-                    createBookNode();
-
+//        function querySearch() {
+//            $('.am-search-value').bind('search', function () {
+//                let inputVal = queryInputVal();
+//                console.log(inputVal);
+//                if (inputVal == arr[1]) {
+//
+//                    nodeSwitch(Initialize_novel_container, Boolean = 'none');
+//                    nodeSwitch(no_novel_container, Boolean = 'none');
+//                    nodeSwitch(yes_novel_container, Boolean = 'block');
+//                    createBookNode();
+//
 //                    clickInputCross();
-                }
-                if (inputVal != arr[1]) {
+//                }
+//                if (inputVal == arr[0]) {
+//
+//                    nodeSwitch(Initialize_novel_container, Boolean = 'none');
+//                    nodeSwitch(no_novel_container, Boolean = 'block');
+//
+//                    clickInputCross();
+//                }
+//
+//            });
 
-                    nodeSwitch(Initialize_novel_container, Boolean = 'none');
-                    nodeSwitch(no_novel_container, Boolean = 'block');
+        function keydown(e)
+        {
+            var currKey=0,e=e||event;
+            currKey=e.keyCode||e.which||e.charCode;//支持IE、FF
+            if (currKey == 13)
+            {
 
-                    clickInputCross();
-                }
-
-            });
+            }
         }
-        querySearch();
+
+        document.onkeydown = keydown;
+
+//        }
+
+//        querySearch();
 
 
         let root = document.getElementById('root');
@@ -494,7 +509,7 @@
             }
             return (false);
         }
-        Samsung Galaxy s8
+
         let page_url = getQueryVariable("pageUrl");
 
         cookie.set("indexUrl", page_url, 1);

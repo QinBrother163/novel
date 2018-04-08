@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
+    <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
+    <link rel="stylesheet" href="../css/personal.css">
+    <title>看书网 | 让快乐更简单</title>
+    <script type="text/javascript">
+        !function () {
+            var a = "@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}ins,a{text-decoration:none}",
+                    b = document.createElement("style");
+            if (document.getElementsByTagName("head")[0].appendChild(b), b.styleSheet) b.styleSheet.disabled || (b.styleSheet.cssText = a); else try {
+                b.innerHTML = a
+            } catch (c) {
+                b.innerText = a
+            }
+        }();
+        !function (a, b) {
+            function c() {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = b / 10;
+                f.style.fontSize = c + "px", k.rem = a.rem = c
+            }
+
+            var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'),
+                    h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {});
+            if (g) {
+                console.warn("将根据已有的meta标签来设置缩放比例");
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            } else if (h) {
+                var m = h.getAttribute("content");
+                if (m) {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+                }
+            }
+            if (!i && !j) {
+                var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)),
+                        q = a.devicePixelRatio;
+                i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+            }
+            if (f.setAttribute("data-dpr", i), !g)if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g); else {
+                var r = e.createElement("div");
+                r.appendChild(g), e.write(r.innerHTML)
+            }
+            a.addEventListener("resize", function () {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function (a) {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function () {
+                e.body.style.fontSize = 12 * i + "px"
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a) {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function (a) {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
+    </script>
+    <style type="text/css">
+        .sign-record-wrap{
+            min-height: 100%;
+        }
+        .sign-record-img{
+            text-align: center;
+            padding: 1.7rem 0;
+        }
+        .sign-record-img img{
+            width: 3rem;
+            height: 3rem;
+        }
+        .sign-record-img .p1{
+            padding: .7rem 0 .2rem 0;
+        }
+        .sign-record-img .p2{
+            font-size: .2112rem;
+            color: #777;
+        }
+        .sign-record-btn{
+            text-align: center;
+            padding: 0 .5rem;
+        }
+        .sign-record-btn .btn{
+            padding: .1rem 0;
+            color: #fff;
+            /*border: 1px solid #0099FF;*/
+            border-radius: .15rem;
+            background-color: #0099FF;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <div class="page-style3 page-style3-male">
+        <div class="library3-container">
+            <div class="component-header-wrap-3">
+                <a href="javascript:void(0);"><span class="imgicon nav-left"></span></a>
+                <div class="title">送书币</div>
+                <div class="menu-btn"></div>
+                {include file="public/header" /}
+                <!--<div class="menu-modal-bg openMenu noMenu">-->
+                    <!--<div class="menu-content">-->
+                        <!--<a href="/home?account_id=2437">-->
+                            <!--<img src="../images/home@2x.png" alt="icon">-->
+                            <!--<span>首页</span>-->
+                        <!--</a>-->
+                        <!--<a href="/myBookshelf?account_id=2437">-->
+                            <!--<img src="../images/bookshelf-icon@2x.png" alt="icon">-->
+                            <!--<span>书架</span>-->
+                        <!--</a>-->
+                        <!--<a href="/readHistory?account_id=2437">-->
+                            <!--<img src="../images/history@2x.png" alt="icon">-->
+                            <!--<span>阅读历史</span>-->
+                        <!--</a>-->
+                        <!--<a href="/library?account_id=2437">-->
+                            <!--<img src="../images/stacks-icon@2x.png" alt="icon">-->
+                            <!--<span>书库</span>-->
+                        <!--</a>-->
+                        <!--<a href="/top?account_id=2437">-->
+                            <!--<img src="../images/trophy@2.png" alt="icon">-->
+                            <!--<span>排行榜</span>-->
+                        <!--</a>-->
+                        <!--<a href="/search?account_id=2437"><img src="../images/search@2x.png" alt="icon">-->
+                            <!--<span>搜索</span>-->
+                        <!--</a>-->
+                        <!--<a href="/pay/recharge?account_id=2437">-->
+                            <!--<img src="../images/chong@2x.png" alt="icon">-->
+                            <!--<span>充值</span>-->
+                        <!--</a>-->
+                        <!--<a href="/user?account_id=2437">-->
+                            <!--<img src="../images/user@4.png" alt="icon">-->
+                            <!--<span>个人中心</span>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            <div class="sign-record-wrap">
+                <div class="sign-record-img">
+                    <img src="../images/sign-record-img.png" alt="">
+                    <p class="p1">签到送礼</p>
+                    <p class="p2">每日签到可获得 50 书币奖励</p>
+                </div>
+                <div class="sign-record-btn">
+                    <div class="btn">
+                        签到有奖励哦！
+                    </div>
+                </div>
+            </div>
+            <div class="style3-home-nav">
+                <a href="{:url('cms/index/index')}">
+                    <img src="__MODULE_IMG__/../images/home-nav/1.png"><span>首页</span>
+                </a>
+                <a href="{:url('cms/column/ranking')}">
+                    <img src="__MODULE_IMG__/../images/home-nav/2.png"><span>榜单</span>
+                </a>
+                <a href="{:url('cms/pay/index')}">
+                    <img src="__MODULE_IMG__/../images/home-nav/3.png"><span>充值</span>
+                </a>
+                <a href="{:url('cms/user/index')}">
+                    <img src="__MODULE_IMG__/../images/home-nav/4.png"><span>个人中心</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--首次登陆签到-->
+<div class="change-theme-container dialog-rewards" style="display: none;">
+    <div class="change-theme" style="margin-top: -93.5px;">
+        <div class="change-theme-title">签到成功</div>
+        <div class="change-theme-main"><p>每日首次签到，赠送 <span class="val">50</span> 书币<br>请明日继续签到哦</p></div>
+        <!--<div class="change-theme-bottom close-btn">确 认</div>-->
+    </div>
+</div>
+<script type="text/javascript">
+    (function () {
+        let btn = document.querySelector('.btn');
+        let am_toast_notice = document.querySelector('.change-theme-container');
+
+        let Boolean = false;
+        function modifyBtnTxt(txt) {
+            document.querySelector('.btn').innerText = txt;
+        }
+
+        function showToastNotice(node, boolean) {
+            node.style.display = boolean;
+            let timer = setTimeout(function () {
+                node.style.display = 'none';
+            }, 2000)
+        }
+
+        btn.onclick = function () {
+            Boolean = true;
+            let boolean_ = 'block';
+            showToastNotice(am_toast_notice, boolean_);
+        };
+
+        let timer = setInterval(function () {
+            if (Boolean){
+                let txt = '您今天已签到过,明天再来吧！';
+                modifyBtnTxt(txt);
+                btn.style.color = '#ccc';
+                window.clearInterval(timer);
+            }else{
+                let txt = '签到有奖励哦！';
+                modifyBtnTxt(txt);
+            }
+        },700);
+
+
+
+
+    })();
+</script>
+</body>
+</html>

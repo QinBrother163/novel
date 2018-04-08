@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
     <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
     <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
     <link rel="stylesheet" href="../css/personal.css">
@@ -65,7 +66,26 @@
     </script>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__"><symbol viewBox="0 0 44 44" id="right"><title>Operation Icons Copy 4</title><defs><path id="right_a" d="M-129-845h24v24h-24z"></path></defs><clipPath id="right_b"><use xlink:href="#right_a" overflow="visible"></use></clipPath><g clip-path="url(#right_b)"><defs><path id="right_c" d="M-903-949H947V996H-903z"></path></defs><clipPath id="right_d"><use xlink:href="#right_c" overflow="visible"></use></clipPath></g><path d="M30.601 21.399L18.368 9.166l-2.121 2.121 10.118 10.119-10.118 10.118 2.121 2.121 12.233-12.233-.006-.006z"></path></symbol></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="position: absolute; width: 0; height: 0" id="__SVG_SPRITE_NODE__">
+    <symbol viewBox="0 0 44 44" id="right"><title>Operation Icons Copy 4</title>
+        <defs>
+            <path id="right_a" d="M-129-845h24v24h-24z"></path>
+        </defs>
+        <clipPath id="right_b">
+            <use xlink:href="#right_a" overflow="visible"></use>
+        </clipPath>
+        <g clip-path="url(#right_b)">
+            <defs>
+                <path id="right_c" d="M-903-949H947V996H-903z"></path>
+            </defs>
+            <clipPath id="right_d">
+                <use xlink:href="#right_c" overflow="visible"></use>
+            </clipPath>
+        </g>
+        <path d="M30.601 21.399L18.368 9.166l-2.121 2.121 10.118 10.119-10.118 10.118 2.121 2.121 12.233-12.233-.006-.006z"></path>
+    </symbol>
+</svg>
 
 <div id="root">
     <div data-reactroot="" class="page-style3 page-style3-male">
@@ -126,12 +146,12 @@
                     </div>
                     <p class="count">
                         <span>564万字</span>
-                    <!--<p class="freetime">-->
-                    <!--<div class="timecut3 size-small"><span class="time-item bg-active">01</span><i>:</i><span-->
-                            <!--class="time-item">02</span><i>:</i><span class="time-item">57</span><i>:</i><span-->
-                            <!--class="time-item">11</span>-->
-                    <!--</div>-->
-                    <!--</p>-->
+                        <!--<p class="freetime">-->
+                        <!--<div class="timecut3 size-small"><span class="time-item bg-active">01</span><i>:</i><span-->
+                        <!--class="time-item">02</span><i>:</i><span class="time-item">57</span><i>:</i><span-->
+                        <!--class="time-item">11</span>-->
+                        <!--</div>-->
+                        <!--</p>-->
                     </p>
                 </div>
             </div>
@@ -280,6 +300,20 @@
                         <span class="name">成长的代价</span></a></div>
                 </div>
             </div>
+            <!--打赏金币不足-->
+            <div class="dashang-dialog2-mask" style="display: none">
+                <div class="dashang-dialog2">
+                    <div class="con">
+                        <div class="l1">您的余额不足，无法打赏</div>
+                        <div class="l2">请您充值后再进行打赏</div>
+                    </div>
+                    <div class="l3">
+                        <div class="cancel-btn btn">取消</div>
+                        <a class="ok-btn btn active" href="#">立即充值</a>
+                    </div>
+                </div>
+                <div class="dialog_bg"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -319,7 +353,7 @@
                                     <div class="values"><em>888</em><!-- react-text: 36 -->书币<!-- /react-text --></div>
                                 </div>
                             </div>
-                            <div class="ok-btn">确定</div>
+                            <div id="ok-btn" class="ok-btn">确定</div>
                         </div>
                     </div>
                 </div>
@@ -328,7 +362,34 @@
         </div>
     </div>
 </div>
-
+<!--添加书架-->
+<div id="am-toast-notice" style="display: none">
+    <div class="am-toast am-toast-mask">
+        <span>
+            <div class="am-toast-notice">
+                <div class="am-toast-notice-content">
+                    <div class="am-toast-text" role="alert" aria-live="assertive">
+                        <div>加入书架成功!</div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
+<!--打赏-->
+<div id="am-toast-reward" style="display: none">
+    <div class="am-toast am-toast-mask">
+        <span>
+            <div class="am-toast-notice">
+                <div class="am-toast-notice-content">
+                    <div class="am-toast-text am-toast-text-icon" role="alert" aria-live="assertive">
+                        <div>打赏成功!</div>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
 
 <script type="text/javascript">
     (function onGoPage() {
@@ -341,10 +402,28 @@
         let load_more_discuss = root.querySelector('.load-more-discuss');
         let reward = document.querySelector('.reward_con');
         let am_modal_close = document.querySelector('.am-modal-close');
-        let ok_btn = document.querySelector('.ok-btn');
+        let ok_btn = document.querySelector('#ok-btn');
         let recharge_item = reward.getElementsByClassName('item');
         let click_like = document.getElementsByClassName('click-like');
         let page_style3 = root.querySelector('.page-style3');
+        let am_toast_notice = document.querySelector('#am-toast-notice');
+        let ghost_btn = document.querySelector('.ghost-btn');
+
+        let am_toast_reward = document.querySelector('#am-toast-reward');
+
+
+        function showToastNotice(node, boolean) {
+            node.style.display = boolean;
+            let timer = setTimeout(function () {
+                node.style.display = 'none';
+            }, 1500)
+        }
+
+        ghost_btn.onclick = function () {
+            let boolean = 'block';
+            showToastNotice(am_toast_notice, boolean);
+            ghost_btn.innerText = '已加入书架';
+        };
 
         var cookie = {
             set: function (key, val, time) {//设置cookie方法
@@ -375,9 +454,9 @@
         };
         sex_type = cookie.get("sex_type");
 
-        if (sex_type == 1){
+        if (sex_type == 1) {
             page_style3.className = 'page-style3 page-style3-male';//男版
-        }else{
+        } else {
             page_style3.className = 'page-style3 page-style3-female';//女版
         }
 
@@ -424,7 +503,6 @@
         }
 
 
-
         function getQueryVariable(variable) {
             var query = window.location.search.substring(1);
             var vars = query.split("&");
@@ -462,6 +540,8 @@
         };
         ok_btn.onclick = function () {
             reward.className = 'reward_con noMenu';
+            let boolean = 'block';
+            showToastNotice(am_toast_reward, boolean);
         };
     })();
 

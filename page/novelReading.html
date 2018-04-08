@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
     <meta name="keywords" content="奇幻小说,穿越小说,电子小书,看书网">
     <meta name="description" content="看书网,用心为用户打造的快乐小说平台,拥有海量电子小说,奇幻小说,看小说更畅爽,让快乐更简单！">
     <link rel="stylesheet" href="../css/personal.css">
@@ -82,7 +83,7 @@
                 </div>
             </div>
             <div class="tool-bar clearfix">
-                <span class="color-tool color1 selected" data-style="white-mode"></span>
+                <span class="color-tool color1 " data-style="white-mode"></span>
                 <span class="color-tool color2 " data-style="green-mode"></span>
                 <span class="color-tool color3 " data-style="brown-mode"></span>
                 <span class="color-tool color4 " data-style="night-mode"></span>
@@ -214,13 +215,13 @@
 
 </div>
 <script type="text/javascript">
-    (function onGoPage() {
+    (function () {
         let root = document.getElementById('root');
         let nav_left = document.querySelector('.anticon-left');
         let color_tool = document.getElementsByClassName('color-tool');
         let middle_mode = document.querySelector('.middle-mode-list');
-        let font2 = document.querySelector('.font2');
-        let font1 = document.querySelector('.font1');
+        let font1 = document.querySelector('.font1');//+++++
+        let font2 = document.querySelector('.font2');//-----
 
         var cookie = {
             set: function (key, val, time) {//设置cookie方法
@@ -271,15 +272,63 @@
             window.location.href = page_url;
         };
 
+
+        let book_Color = cookie.get("bookColor");
+
+        if(!book_Color){
+            book_Color = 'white-mode';
+            cookie.set("bookColor", book_Color, 365);
+            book_Color = cookie.get("bookColor");
+        }
+
+        let book_font = cookie.get("bookFont");
+
+        if(!book_font){
+            book_font = 'middle-mode';
+            cookie.set("bookFont", book_font, 365);
+            book_font = cookie.get("bookFont");
+        }
+
+
+        function InitializeClass(bg,font) {
+            let classList = 'middle-mode-list '+ bg +' ' + font;
+            middle_mode.className = classList;
+            switch (bg){
+                case 'white-mode':
+                    color_tool[0].className = 'color-tool color1 selected';
+                    break;
+                case 'green-mode':
+                    color_tool[1].className = 'color-tool color2 selected';
+                    break;
+                case 'brown-mode':
+                    color_tool[2].className = 'color-tool color3 selected';
+                    break;
+                default:
+                    color_tool[3].className = 'color-tool color4 selected';
+                    break;
+            }
+
+        }
+        
         let colorArr = [
-            'middle-mode-list white-mode middle-mode',
-            'middle-mode-list green-mode middle-mode',
-            'middle-mode-list brown-mode middle-mode',
-            'middle-mode-list night-mode middle-mode'
+            'middle-mode-list white-mode ' + cookie.get("bookFont"),
+            'middle-mode-list green-mode ' + cookie.get("bookFont"),
+            'middle-mode-list brown-mode ' + cookie.get("bookFont"),
+            'middle-mode-list night-mode ' + cookie.get("bookFont")
         ];
 
 
         let arrStr0 = [];
+        let arrColor = [];
+        let arrFont = [];
+        
+        function assignmentCookie() {
+            arrFont = middle_mode.className.split(' ');
+            book_font = arrFont[2];
+            cookie.set("bookFont", book_font, 365);
+            book_font = cookie.get("bookFont");
+        }
+        
         font2.onclick = function () {
 
             arrStr0 = middle_mode.className.split(' ');
@@ -298,23 +347,28 @@
                     break;
                 case 'font3':
                     middle_mode.className = fontArr[0];
-
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'middle-mode':
                     middle_mode.className = fontArr[1];
-
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'font5':
                     middle_mode.className = fontArr[2];
-
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'big-mode':
                     middle_mode.className = fontArr[3];
-
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'font7':
                     middle_mode.className = fontArr[4];
-
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 default:
                     break;
@@ -334,18 +388,28 @@
             switch (arrStr0[2]) {
                 case 'small-mode':
                     middle_mode.className = fontArr[1];
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'font3':
                     middle_mode.className = fontArr[2];
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'middle-mode':
                     middle_mode.className = fontArr[3];
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'font5':
                     middle_mode.className = fontArr[4];
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'big-mode':
                     middle_mode.className = fontArr[5];
+                    assignmentCookie();
+                    InitializeClass(book_Color,book_font);
                     break;
                 case 'font7':
                     break;
@@ -359,15 +423,20 @@
 
                 for (let i = 0; i < color_tool.length; i++) {
 
-                    color_tool[0].className = 'color-tool color1';
-                    color_tool[1].className = 'color-tool color2';
-                    color_tool[2].className = 'color-tool color3';
-                    color_tool[3].className = 'color-tool color4';
+                    color_tool[i].className = 'color-tool color'+(i+1);
                 }
                 middle_mode.className = colorArr[i];
+                arrColor = middle_mode.className.split(' ');
+                book_Color = arrColor[1];
+                cookie.set("bookColor", book_Color, 365);
+                book_Color = cookie.get("bookColor");
+                InitializeClass(book_Color,book_font);
+
                 this.className = 'color-tool ' + 'color' + (i + 1) + ' selected';
+
             }
         }
+        InitializeClass(book_Color,book_font);
     })();
 </script>
 </body>
