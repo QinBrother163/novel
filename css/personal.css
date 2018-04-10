@@ -8916,11 +8916,11 @@ body {
 }
 
 .home3-new-book .recommends-text p, .home3-recommends .recommends-text p {
-    font-size: .32rem;
+    font-size: .4rem;
     color: #a7a7a7;
-    line-height: .32rem;
+    line-height: .4rem;
     margin-top: .26667rem;
-    height: .32rem;
+    height: .4rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis
